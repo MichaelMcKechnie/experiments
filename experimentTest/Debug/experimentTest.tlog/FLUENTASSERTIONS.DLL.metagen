@@ -1,0 +1,770 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly FluentAssertions, Version=1.7.1.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class FluentAssertions.AndConstraint`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(T): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    T And      'get ' : 
+  Methods:
+    get_And(): PrivateScope, Public, HideBySig, SpecialName
+Class FluentAssertions.AssertionExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Invoking(T, Action`1): PrivateScope, Public, Static, HideBySig
+    ExecutionTimeOf(T, Expression`1): PrivateScope, Public, Static, HideBySig
+    ExecutionTime(Action): PrivateScope, Public, Static, HideBySig
+    Should(XDocument): PrivateScope, Public, Static, HideBySig
+    Should(XElement): PrivateScope, Public, Static, HideBySig
+    Should(XAttribute): PrivateScope, Public, Static, HideBySig
+    ShouldThrow(Action): PrivateScope, Public, Static, HideBySig
+    ShouldThrow(Action, String, Object[]): PrivateScope, Public, Static, HideBySig
+    ShouldNotThrow(Action): PrivateScope, Public, Static, HideBySig
+    ShouldNotThrow(Action, String, Object[]): PrivateScope, Public, Static, HideBySig
+    ShouldNotThrow(Action): PrivateScope, Public, Static, HideBySig
+    ShouldNotThrow(Action, String, Object[]): PrivateScope, Public, Static, HideBySig
+    Enumerating(Func`1): PrivateScope, Public, Static, HideBySig
+    Enumerating(Func`1): PrivateScope, Public, Static, HideBySig
+    Should(Object): PrivateScope, Public, Static, HideBySig
+    Should(Boolean): PrivateScope, Public, Static, HideBySig
+    Should(Nullable`1): PrivateScope, Public, Static, HideBySig
+    Should(Guid): PrivateScope, Public, Static, HideBySig
+    Should(Nullable`1): PrivateScope, Public, Static, HideBySig
+    Should(IEnumerable): PrivateScope, Public, Static, HideBySig
+    Should(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    Should(IDictionary`2): PrivateScope, Public, Static, HideBySig
+    Should(DateTime): PrivateScope, Public, Static, HideBySig
+    Should(Nullable`1): PrivateScope, Public, Static, HideBySig
+    Should(IComparable`1): PrivateScope, Public, Static, HideBySig
+    Should(Int32): PrivateScope, Public, Static, HideBySig
+    Should(Nullable`1): PrivateScope, Public, Static, HideBySig
+    Should(Byte): PrivateScope, Public, Static, HideBySig
+    Should(Nullable`1): PrivateScope, Public, Static, HideBySig
+    Should(Int16): PrivateScope, Public, Static, HideBySig
+    Should(Nullable`1): PrivateScope, Public, Static, HideBySig
+    Should(Int64): PrivateScope, Public, Static, HideBySig
+    Should(Nullable`1): PrivateScope, Public, Static, HideBySig
+    Should(Single): PrivateScope, Public, Static, HideBySig
+    Should(Nullable`1): PrivateScope, Public, Static, HideBySig
+    Should(Double): PrivateScope, Public, Static, HideBySig
+    Should(Nullable`1): PrivateScope, Public, Static, HideBySig
+    Should(String): PrivateScope, Public, Static, HideBySig
+    Should(TimeSpan): PrivateScope, Public, Static, HideBySig
+    Should(Nullable`1): PrivateScope, Public, Static, HideBySig
+    ShouldHave(T): PrivateScope, Public, Static, HideBySig
+    Should(Type): PrivateScope, Public, Static, HideBySig
+    Should(MethodInfoSelector): PrivateScope, Public, Static, HideBySig
+    Should(PropertyInfoSelector): PrivateScope, Public, Static, HideBySig
+    As(Object): PrivateScope, Public, Static, HideBySig
+Class FluentAssertions.Assertions.ActionAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Action Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    ShouldThrow(String, Object[]): PrivateScope, Public, HideBySig
+    ShouldNotThrow(String, Object[]): PrivateScope, Public, HideBySig
+    ShouldNotThrow(String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.BooleanAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Nullable`1[System.Boolean] Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    BeFalse(): PrivateScope, Public, HideBySig
+    BeFalse(String, Object[]): PrivateScope, Public, HideBySig
+    BeTrue(): PrivateScope, Public, HideBySig
+    BeTrue(String, Object[]): PrivateScope, Public, HideBySig
+    Be(Boolean): PrivateScope, Public, HideBySig
+    Be(Boolean, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.ReferenceTypeAssertions`2[TSubject,TAssertions]: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Type parameter: TSubject
+  Type parameter: TAssertions, FluentAssertions.Assertions.ReferenceTypeAssertions`2[TSubject,TAssertions]
+  Properties:
+    TSubject Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    BeOfType(): PrivateScope, Public, HideBySig
+    BeOfType(String, Object[]): PrivateScope, Public, HideBySig
+    BeAssignableTo(): PrivateScope, Public, HideBySig
+    BeAssignableTo(String, Object[]): PrivateScope, Public, HideBySig
+    Match(Expression`1): PrivateScope, Public, HideBySig
+    Match(Expression`1, String, Object[]): PrivateScope, Public, HideBySig
+    Match(Expression`1): PrivateScope, Public, HideBySig
+    Match(Expression`1, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.CollectionAssertions`2[TSubject,TAssertions]: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Type parameter: TSubject, System.Collections.IEnumerable
+  Type parameter: TAssertions, FluentAssertions.Assertions.CollectionAssertions`2[TSubject,TAssertions]
+  :FluentAssertions.Assertions.ReferenceTypeAssertions`2[TSubject,TAssertions]
+  Methods:
+    HaveCount(Int32): PrivateScope, Public, HideBySig
+    HaveCount(Int32, String, Object[]): PrivateScope, Public, HideBySig
+    HaveCount(Expression`1): PrivateScope, Public, HideBySig
+    HaveCount(Expression`1, String, Object[]): PrivateScope, Public, HideBySig
+    BeEmpty(): PrivateScope, Public, HideBySig
+    BeEmpty(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeEmpty(): PrivateScope, Public, HideBySig
+    NotBeEmpty(String, Object[]): PrivateScope, Public, HideBySig
+    OnlyHaveUniqueItems(): PrivateScope, Public, HideBySig
+    OnlyHaveUniqueItems(String, Object[]): PrivateScope, Public, HideBySig
+    NotContainNulls(): PrivateScope, Public, HideBySig
+    NotContainNulls(String, Object[]): PrivateScope, Public, HideBySig
+    Equal(IEnumerable): PrivateScope, Public, HideBySig
+    Equal(Object[]): PrivateScope, Public, HideBySig
+    Equal(IEnumerable, String, Object[]): PrivateScope, Public, HideBySig
+    NotEqual(IEnumerable): PrivateScope, Public, HideBySig
+    NotEqual(IEnumerable, String, Object[]): PrivateScope, Public, HideBySig
+    BeEquivalentTo(IEnumerable): PrivateScope, Public, HideBySig
+    BeEquivalentTo(Object[]): PrivateScope, Public, HideBySig
+    BeEquivalentTo(IEnumerable, String, Object[]): PrivateScope, Public, HideBySig
+    NotBeEquivalentTo(IEnumerable): PrivateScope, Public, HideBySig
+    NotBeEquivalentTo(IEnumerable, String, Object[]): PrivateScope, Public, HideBySig
+    ContainItemsAssignableTo(String, Object[]): PrivateScope, Public, HideBySig
+    Contain(IEnumerable): PrivateScope, Public, HideBySig
+    Contain(IEnumerable, String, Object[]): PrivateScope, Public, HideBySig
+    ContainInOrder(IEnumerable): PrivateScope, Public, HideBySig
+    ContainInOrder(IEnumerable, String, Object[]): PrivateScope, Public, HideBySig
+    BeSubsetOf(IEnumerable): PrivateScope, Public, HideBySig
+    BeSubsetOf(IEnumerable, String, Object[]): PrivateScope, Public, HideBySig
+    NotBeSubsetOf(IEnumerable): PrivateScope, Public, HideBySig
+    NotBeSubsetOf(IEnumerable, String, Object[]): PrivateScope, Public, HideBySig
+    HaveSameCount(IEnumerable): PrivateScope, Public, HideBySig
+    HaveSameCount(IEnumerable, String, Object[]): PrivateScope, Public, HideBySig
+    BeNull(): PrivateScope, Public, HideBySig
+    BeNull(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeNull(): PrivateScope, Public, HideBySig
+    NotBeNull(String, Object[]): PrivateScope, Public, HideBySig
+    HaveElementAt(Int32, Object): PrivateScope, Public, HideBySig
+    HaveElementAt(Int32, Object, String, Object[]): PrivateScope, Public, HideBySig
+    ContainItemsAssignableTo(): PrivateScope, Public, HideBySig
+    NotContain(Object): PrivateScope, Public, HideBySig
+    NotContain(Object, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.ComparableTypeAssertions`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+  Properties:
+    System.IComparable`1[T] Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    Be(T): PrivateScope, Public, HideBySig
+    Be(T, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(T): PrivateScope, Public, HideBySig
+    NotBe(T, String, Object[]): PrivateScope, Public, HideBySig
+    BeLessThan(T): PrivateScope, Public, HideBySig
+    BeLessThan(T, String, Object[]): PrivateScope, Public, HideBySig
+    BeLessOrEqualTo(T): PrivateScope, Public, HideBySig
+    BeLessOrEqualTo(T, String, Object[]): PrivateScope, Public, HideBySig
+    BeGreaterThan(T): PrivateScope, Public, HideBySig
+    BeGreaterThan(T, String, Object[]): PrivateScope, Public, HideBySig
+    BeGreaterOrEqualTo(T): PrivateScope, Public, HideBySig
+    BeGreaterOrEqualTo(T, String, Object[]): PrivateScope, Public, HideBySig
+    BeInRange(T, T): PrivateScope, Public, HideBySig
+    BeInRange(T, T, String, Object[]): PrivateScope, Public, HideBySig
+    NotBeNull(): PrivateScope, Public, HideBySig
+    NotBeNull(String, Object[]): PrivateScope, Public, HideBySig
+    BeNull(): PrivateScope, Public, HideBySig
+    BeNull(String, Object[]): PrivateScope, Public, HideBySig
+Struct FluentAssertions.Assertions.ComparisonMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    FluentAssertions.Assertions.ComparisonMode Exact = 0 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.ComparisonMode Equivalent = 1 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.ComparisonMode StartWith = 2 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.ComparisonMode StartWithEquivalent = 3 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.ComparisonMode Substring = 4 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.ComparisonMode EquivalentSubstring = 5 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.ComparisonMode Wildcard = 6 : Public, Static, Literal, HasDefault
+Struct FluentAssertions.Assertions.CyclicReferenceHandling: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    FluentAssertions.Assertions.CyclicReferenceHandling Ignore = 0 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.CyclicReferenceHandling ThrowException = 1 : Public, Static, Literal, HasDefault
+Class FluentAssertions.Assertions.DateTimeAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Nullable`1[System.DateTime] Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    Be(DateTime): PrivateScope, Public, HideBySig
+    Be(DateTime, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(DateTime): PrivateScope, Public, HideBySig
+    NotBe(DateTime, String, Object[]): PrivateScope, Public, HideBySig
+    BeBefore(DateTime): PrivateScope, Public, HideBySig
+    BeBefore(DateTime, String, Object[]): PrivateScope, Public, HideBySig
+    BeOnOrBefore(DateTime): PrivateScope, Public, HideBySig
+    BeOnOrBefore(DateTime, String, Object[]): PrivateScope, Public, HideBySig
+    BeAfter(DateTime): PrivateScope, Public, HideBySig
+    BeAfter(DateTime, String, Object[]): PrivateScope, Public, HideBySig
+    BeOnOrAfter(DateTime): PrivateScope, Public, HideBySig
+    BeOnOrAfter(DateTime, String, Object[]): PrivateScope, Public, HideBySig
+    HaveYear(Int32): PrivateScope, Public, HideBySig
+    HaveYear(Int32, String, Object[]): PrivateScope, Public, HideBySig
+    HaveMonth(Int32): PrivateScope, Public, HideBySig
+    HaveMonth(Int32, String, Object[]): PrivateScope, Public, HideBySig
+    HaveDay(Int32): PrivateScope, Public, HideBySig
+    HaveDay(Int32, String, Object[]): PrivateScope, Public, HideBySig
+    HaveHour(Int32): PrivateScope, Public, HideBySig
+    HaveHour(Int32, String, Object[]): PrivateScope, Public, HideBySig
+    HaveMinute(Int32): PrivateScope, Public, HideBySig
+    HaveMinute(Int32, String, Object[]): PrivateScope, Public, HideBySig
+    HaveSecond(Int32): PrivateScope, Public, HideBySig
+    HaveSecond(Int32, String, Object[]): PrivateScope, Public, HideBySig
+    BeMoreThan(TimeSpan): PrivateScope, Public, HideBySig
+    BeAtLeast(TimeSpan): PrivateScope, Public, HideBySig
+    BeExactly(TimeSpan): PrivateScope, Public, HideBySig
+    BeWithin(TimeSpan): PrivateScope, Public, HideBySig
+    BeLessThan(TimeSpan): PrivateScope, Public, HideBySig
+Struct FluentAssertions.Assertions.TimeSpanCondition: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    FluentAssertions.Assertions.TimeSpanCondition MoreThan = 0 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.TimeSpanCondition AtLeast = 1 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.TimeSpanCondition Exactly = 2 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.TimeSpanCondition Within = 3 : Public, Static, Literal, HasDefault
+    FluentAssertions.Assertions.TimeSpanCondition LessThan = 4 : Public, Static, Literal, HasDefault
+Class FluentAssertions.Assertions.ExceptionAssertions`1[TException]: AutoLayout, AnsiClass, Class, Public
+  Type parameter: TException, System.Exception
+  :FluentAssertions.Assertions.ReferenceTypeAssertions`2[System.Exception,FluentAssertions.Assertions.ExceptionAssertions`1[TException]]
+  Properties:
+    TException And 'get ' : 
+  Methods:
+    get_And(): PrivateScope, Public, HideBySig, SpecialName
+    WithMessage(String): PrivateScope, Public, HideBySig
+    WithMessage(String, String, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    WithMessage(String, ComparisonMode): PrivateScope, Public, HideBySig
+    WithMessage(String, ComparisonMode, String, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    WithInnerException(): PrivateScope, Public, HideBySig
+    WithInnerException(String, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    WithInnerMessage(String): PrivateScope, Public, HideBySig
+    WithInnerMessage(String, ComparisonMode): PrivateScope, Public, HideBySig
+    WithInnerMessage(String, String, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    WithInnerMessage(String, ComparisonMode, String, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Where(Expression`1): PrivateScope, Public, HideBySig
+    Where(Expression`1, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.ExecutionTimeAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Action): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ShouldNotExceed(TimeSpan): PrivateScope, Public, HideBySig
+    ShouldNotExceed(TimeSpan, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.MemberExecutionTimeAssertions`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+  :FluentAssertions.Assertions.ExecutionTimeAssertions
+    Void .ctor(T, System.Linq.Expressions.Expression`1[System.Action`1[T]]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class FluentAssertions.Assertions.FloatingPointExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    BeApproximately(NumericAssertions`1, Single, Single): PrivateScope, Public, Static, HideBySig
+    BeApproximately(NumericAssertions`1, Single, Single, String, Object[]): PrivateScope, Public, Static, HideBySig
+    BeApproximately(NumericAssertions`1, Single, Single): PrivateScope, Public, Static, HideBySig
+    BeApproximately(NumericAssertions`1, Single, Single, String, Object[]): PrivateScope, Public, Static, HideBySig
+    BeApproximately(NumericAssertions`1, Double, Double): PrivateScope, Public, Static, HideBySig
+    BeApproximately(NumericAssertions`1, Double, Double, String, Object[]): PrivateScope, Public, Static, HideBySig
+    BeApproximately(NumericAssertions`1, Double, Double): PrivateScope, Public, Static, HideBySig
+    BeApproximately(NumericAssertions`1, Double, Double, String, Object[]): PrivateScope, Public, Static, HideBySig
+Class FluentAssertions.Assertions.GenericCollectionAssertions`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+  :FluentAssertions.Assertions.CollectionAssertions`2[System.Collections.Generic.IEnumerable`1[T],FluentAssertions.Assertions.GenericCollectionAssertions`1[T]]
+  Methods:
+    Contain(T): PrivateScope, Public, HideBySig
+    Contain(T, String, Object[]): PrivateScope, Public, HideBySig
+    Contain(IEnumerable`1, T[]): PrivateScope, Public, HideBySig
+    Contain(Expression`1): PrivateScope, Public, HideBySig
+    Contain(Expression`1, String, Object[]): PrivateScope, Public, HideBySig
+    OnlyContain(Expression`1): PrivateScope, Public, HideBySig
+    OnlyContain(Expression`1, String, Object[]): PrivateScope, Public, HideBySig
+    NotContain(Expression`1): PrivateScope, Public, HideBySig
+    NotContain(Expression`1, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.GenericDictionaryAssertions`2[TKey,TValue]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: TKey
+  Type parameter: TValue
+  Properties:
+    System.Collections.Generic.IDictionary`2[TKey,TValue] Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    BeNull(): PrivateScope, Public, HideBySig
+    BeNull(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeNull(): PrivateScope, Public, HideBySig
+    NotBeNull(String, Object[]): PrivateScope, Public, HideBySig
+    HaveCount(Int32): PrivateScope, Public, HideBySig
+    HaveCount(Int32, String, Object[]): PrivateScope, Public, HideBySig
+    HaveCount(Expression`1): PrivateScope, Public, HideBySig
+    HaveCount(Expression`1, String, Object[]): PrivateScope, Public, HideBySig
+    BeEmpty(): PrivateScope, Public, HideBySig
+    BeEmpty(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeEmpty(): PrivateScope, Public, HideBySig
+    NotBeEmpty(String, Object[]): PrivateScope, Public, HideBySig
+    Equal(IDictionary`2): PrivateScope, Public, HideBySig
+    Equal(IDictionary`2, String, Object[]): PrivateScope, Public, HideBySig
+    NotEqual(IDictionary`2): PrivateScope, Public, HideBySig
+    NotEqual(IDictionary`2, String, Object[]): PrivateScope, Public, HideBySig
+    ContainKey(TKey): PrivateScope, Public, HideBySig
+    ContainKey(TKey, String, Object[]): PrivateScope, Public, HideBySig
+    ContainKeys(TKey[]): PrivateScope, Public, HideBySig
+    ContainKeys(IEnumerable`1, String, Object[]): PrivateScope, Public, HideBySig
+    NotContainKey(TKey): PrivateScope, Public, HideBySig
+    NotContainKey(TKey, String, Object[]): PrivateScope, Public, HideBySig
+    ContainValue(TValue): PrivateScope, Public, HideBySig
+    ContainValue(TValue, String, Object[]): PrivateScope, Public, HideBySig
+    ContainValues(TValue[]): PrivateScope, Public, HideBySig
+    ContainValues(IEnumerable`1, String, Object[]): PrivateScope, Public, HideBySig
+    NotContainValue(TValue): PrivateScope, Public, HideBySig
+    NotContainValue(TValue, String, Object[]): PrivateScope, Public, HideBySig
+    Contain(KeyValuePair`2): PrivateScope, Public, HideBySig
+    Contain(KeyValuePair`2, String, Object[]): PrivateScope, Public, HideBySig
+    Contain(TKey, TValue): PrivateScope, Public, HideBySig
+    Contain(TKey, TValue, String, Object[]): PrivateScope, Public, HideBySig
+    NotContain(KeyValuePair`2): PrivateScope, Public, HideBySig
+    NotContain(KeyValuePair`2, String, Object[]): PrivateScope, Public, HideBySig
+    NotContain(TKey, TValue): PrivateScope, Public, HideBySig
+    NotContain(TKey, TValue, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.GuidAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Nullable`1[System.Guid] Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    BeEmpty(): PrivateScope, Public, HideBySig
+    BeEmpty(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeEmpty(): PrivateScope, Public, HideBySig
+    NotBeEmpty(String, Object[]): PrivateScope, Public, HideBySig
+    Be(Guid): PrivateScope, Public, HideBySig
+    Be(String): PrivateScope, Public, HideBySig
+    Be(String, String, Object[]): PrivateScope, Public, HideBySig
+    Be(Guid, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(Guid): PrivateScope, Public, HideBySig
+    NotBe(Guid, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.NumericAssertions`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+  Properties:
+    System.IComparable Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    BePositive(): PrivateScope, Public, HideBySig
+    BePositive(String, Object[]): PrivateScope, Public, HideBySig
+    BeNegative(): PrivateScope, Public, HideBySig
+    BeNegative(String, Object[]): PrivateScope, Public, HideBySig
+    BeLessThan(T): PrivateScope, Public, HideBySig
+    BeLessThan(T, String, Object[]): PrivateScope, Public, HideBySig
+    BeLessOrEqualTo(T): PrivateScope, Public, HideBySig
+    BeLessOrEqualTo(T, String, Object[]): PrivateScope, Public, HideBySig
+    BeGreaterThan(T): PrivateScope, Public, HideBySig
+    BeGreaterThan(T, String, Object[]): PrivateScope, Public, HideBySig
+    BeGreaterOrEqualTo(T): PrivateScope, Public, HideBySig
+    BeGreaterOrEqualTo(T, String, Object[]): PrivateScope, Public, HideBySig
+    BeInRange(T, T): PrivateScope, Public, HideBySig
+    BeInRange(T, T, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.IntegralAssertions`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+  :FluentAssertions.Assertions.NumericAssertions`1[T]
+  Methods:
+    Be(T): PrivateScope, Public, HideBySig
+    Be(T, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(T): PrivateScope, Public, HideBySig
+    NotBe(T, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.MethodInfoAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.Reflection.MethodInfo]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.Reflection.MethodInfo] SubjectMethods 'get set' : 
+  Methods:
+    get_SubjectMethods(): PrivateScope, Public, HideBySig, SpecialName
+    BeVirtual(): PrivateScope, Public, HideBySig
+    BeVirtual(String, Object[]): PrivateScope, Public, HideBySig
+    BeDecoratedWith(): PrivateScope, Public, HideBySig
+    BeDecoratedWith(String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.MethodInfoSelector: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.Type]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[System.Reflection.MethodInfo]
+    System.Collections.IEnumerable
+  Properties:
+    FluentAssertions.Assertions.MethodInfoSelector ThatArePublicOrInternal 'get ' : 
+    FluentAssertions.Assertions.MethodInfoSelector ThatReturnVoid 'get ' : 
+  Methods:
+    get_ThatArePublicOrInternal(): PrivateScope, Public, HideBySig, SpecialName
+    get_ThatReturnVoid(): PrivateScope, Public, HideBySig, SpecialName
+    ThatReturn(): PrivateScope, Public, HideBySig
+    ThatAreDecoratedWith(): PrivateScope, Public, HideBySig
+    ToArray(): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class FluentAssertions.Assertions.NonGenericCollectionAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :FluentAssertions.Assertions.CollectionAssertions`2[System.Collections.IEnumerable,FluentAssertions.Assertions.NonGenericCollectionAssertions]
+  Methods:
+    Contain(Object): PrivateScope, Public, HideBySig
+    Contain(Object, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.NullableBooleanAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :FluentAssertions.Assertions.BooleanAssertions
+  Methods:
+    HaveValue(): PrivateScope, Public, HideBySig
+    HaveValue(String, Object[]): PrivateScope, Public, HideBySig
+    NotHaveValue(): PrivateScope, Public, HideBySig
+    NotHaveValue(String, Object[]): PrivateScope, Public, HideBySig
+    Be(Nullable`1): PrivateScope, Public, HideBySig
+    Be(Nullable`1, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.NullableDateTimeAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :FluentAssertions.Assertions.DateTimeAssertions
+  Methods:
+    HaveValue(): PrivateScope, Public, HideBySig
+    HaveValue(String, Object[]): PrivateScope, Public, HideBySig
+    NotHaveValue(): PrivateScope, Public, HideBySig
+    NotHaveValue(String, Object[]): PrivateScope, Public, HideBySig
+    Be(Nullable`1): PrivateScope, Public, HideBySig
+    Be(Nullable`1, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.NullableGuidAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :FluentAssertions.Assertions.GuidAssertions
+  Methods:
+    HaveValue(): PrivateScope, Public, HideBySig
+    HaveValue(String, Object[]): PrivateScope, Public, HideBySig
+    NotHaveValue(): PrivateScope, Public, HideBySig
+    NotHaveValue(String, Object[]): PrivateScope, Public, HideBySig
+    Be(Nullable`1): PrivateScope, Public, HideBySig
+    Be(Nullable`1, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.NullableNumericExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    HaveValue(NumericAssertions`1): PrivateScope, Public, Static, HideBySig
+    HaveValue(NumericAssertions`1, String, Object[]): PrivateScope, Public, Static, HideBySig
+    NotHaveValue(NumericAssertions`1): PrivateScope, Public, Static, HideBySig
+    NotHaveValue(NumericAssertions`1, String, Object[]): PrivateScope, Public, Static, HideBySig
+Class FluentAssertions.Assertions.SimpleTimeSpanAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Nullable`1[System.TimeSpan] Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    BePositive(): PrivateScope, Public, HideBySig
+    BePositive(String, Object[]): PrivateScope, Public, HideBySig
+    BeNegative(): PrivateScope, Public, HideBySig
+    BeNegative(String, Object[]): PrivateScope, Public, HideBySig
+    Be(TimeSpan): PrivateScope, Public, HideBySig
+    Be(TimeSpan, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(TimeSpan): PrivateScope, Public, HideBySig
+    NotBe(TimeSpan, String, Object[]): PrivateScope, Public, HideBySig
+    BeLessThan(TimeSpan): PrivateScope, Public, HideBySig
+    BeLessThan(TimeSpan, String, Object[]): PrivateScope, Public, HideBySig
+    BeLessOrEqualTo(TimeSpan): PrivateScope, Public, HideBySig
+    BeLessOrEqualTo(TimeSpan, String, Object[]): PrivateScope, Public, HideBySig
+    BeGreaterThan(TimeSpan): PrivateScope, Public, HideBySig
+    BeGreaterThan(TimeSpan, String, Object[]): PrivateScope, Public, HideBySig
+    BeGreaterOrEqualTo(TimeSpan): PrivateScope, Public, HideBySig
+    BeGreaterOrEqualTo(TimeSpan, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.NullableSimpleTimeSpanAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :FluentAssertions.Assertions.SimpleTimeSpanAssertions
+  Methods:
+    HaveValue(): PrivateScope, Public, HideBySig
+    HaveValue(String, Object[]): PrivateScope, Public, HideBySig
+    NotHaveValue(): PrivateScope, Public, HideBySig
+    NotHaveValue(String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.ObjectAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :FluentAssertions.Assertions.ReferenceTypeAssertions`2[System.Object,FluentAssertions.Assertions.ObjectAssertions]
+  Methods:
+    Be(Object): PrivateScope, Public, HideBySig
+    Be(Object, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(Object): PrivateScope, Public, HideBySig
+    NotBe(Object, String, Object[]): PrivateScope, Public, HideBySig
+    BeSameAs(Object): PrivateScope, Public, HideBySig
+    BeSameAs(Object, String, Object[]): PrivateScope, Public, HideBySig
+    NotBeSameAs(Object): PrivateScope, Public, HideBySig
+    NotBeSameAs(Object, String, Object[]): PrivateScope, Public, HideBySig
+    BeNull(): PrivateScope, Public, HideBySig
+    BeNull(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeNull(): PrivateScope, Public, HideBySig
+    NotBeNull(String, Object[]): PrivateScope, Public, HideBySig
+    BeBinarySerializable(): PrivateScope, Public, HideBySig
+    BeBinarySerializable(String, Object[]): PrivateScope, Public, HideBySig
+    BeXmlSerializable(): PrivateScope, Public, HideBySig
+    BeXmlSerializable(String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.PropertyAssertions`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+  Properties:
+    T Subject  'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    AllProperties(): PrivateScope, Public, HideBySig
+    SharedProperties(): PrivateScope, Public, HideBySig
+    IncludingNestedObjects(CyclicReferenceHandling(Optional, HasDefault)): PrivateScope, Public, HideBySig
+    AllPropertiesBut(Expression`1, Expression`1[]): PrivateScope, Public, HideBySig
+    But(Expression`1, Expression`1[]): PrivateScope, Public, HideBySig
+    Properties(Expression`1, Expression`1[]): PrivateScope, Public, HideBySig
+    EqualTo(Object): PrivateScope, Public, HideBySig
+    EqualTo(Object, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.PropertyInfoAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.Reflection.PropertyInfo]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.Reflection.PropertyInfo] SubjectProperties 'get set' : 
+  Methods:
+    get_SubjectProperties(): PrivateScope, Public, HideBySig, SpecialName
+    BeVirtual(): PrivateScope, Public, HideBySig
+    BeVirtual(String, Object[]): PrivateScope, Public, HideBySig
+    BeDecoratedWith(): PrivateScope, Public, HideBySig
+    BeDecoratedWith(String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.PropertyInfoSelector: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.Type]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[System.Reflection.PropertyInfo]
+    System.Collections.IEnumerable
+  Properties:
+    FluentAssertions.Assertions.PropertyInfoSelector ThatArePublicOrInternal 'get ' : 
+  Methods:
+    get_ThatArePublicOrInternal(): PrivateScope, Public, HideBySig, SpecialName
+    ThatAreDecoratedWith(): PrivateScope, Public, HideBySig
+    OfType(): PrivateScope, Public, HideBySig
+    ToArray(): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class FluentAssertions.Assertions.StringAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.String Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    Be(String): PrivateScope, Public, HideBySig
+    Be(String, String, Object[]): PrivateScope, Public, HideBySig
+    BeEquivalentTo(String): PrivateScope, Public, HideBySig
+    BeEquivalentTo(String, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(String): PrivateScope, Public, HideBySig
+    NotBe(String, String, Object[]): PrivateScope, Public, HideBySig
+    Match(String): PrivateScope, Public, HideBySig
+    Match(String, String, Object[]): PrivateScope, Public, HideBySig
+    NotMatch(String): PrivateScope, Public, HideBySig
+    NotMatch(String, String, Object[]): PrivateScope, Public, HideBySig
+    MatchEquivalentOf(String): PrivateScope, Public, HideBySig
+    MatchEquivalentOf(String, String, Object[]): PrivateScope, Public, HideBySig
+    NotMatchEquivalentOf(String): PrivateScope, Public, HideBySig
+    NotMatchEquivalentOf(String, String, Object[]): PrivateScope, Public, HideBySig
+    StartWith(String): PrivateScope, Public, HideBySig
+    StartWith(String, String, Object[]): PrivateScope, Public, HideBySig
+    StartWithEquivalent(String): PrivateScope, Public, HideBySig
+    StartWithEquivalent(String, String, Object[]): PrivateScope, Public, HideBySig
+    EndWith(String): PrivateScope, Public, HideBySig
+    EndWith(String, String, Object[]): PrivateScope, Public, HideBySig
+    EndWithEquivalent(String): PrivateScope, Public, HideBySig
+    EndWithEquivalent(String, String, Object[]): PrivateScope, Public, HideBySig
+    Contain(String): PrivateScope, Public, HideBySig
+    Contain(String, String, Object[]): PrivateScope, Public, HideBySig
+    ContainEquivalentOf(String): PrivateScope, Public, HideBySig
+    ContainEquivalentOf(String, String, Object[]): PrivateScope, Public, HideBySig
+    NotContain(String): PrivateScope, Public, HideBySig
+    NotContain(String, String, Object[]): PrivateScope, Public, HideBySig
+    NotContainEquivalentOf(String): PrivateScope, Public, HideBySig
+    NotContainEquivalentOf(String, String, Object[]): PrivateScope, Public, HideBySig
+    BeEmpty(): PrivateScope, Public, HideBySig
+    BeEmpty(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeEmpty(): PrivateScope, Public, HideBySig
+    NotBeEmpty(String, Object[]): PrivateScope, Public, HideBySig
+    HaveLength(Int32): PrivateScope, Public, HideBySig
+    HaveLength(Int32, String, Object[]): PrivateScope, Public, HideBySig
+    BeNull(): PrivateScope, Public, HideBySig
+    BeNull(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeNull(): PrivateScope, Public, HideBySig
+    NotBeNull(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeNullOrEmpty(): PrivateScope, Public, HideBySig
+    NotBeNullOrEmpty(String, Object[]): PrivateScope, Public, HideBySig
+    BeNullOrEmpty(): PrivateScope, Public, HideBySig
+    BeNullOrEmpty(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeBlank(): PrivateScope, Public, HideBySig
+    NotBeBlank(String, Object[]): PrivateScope, Public, HideBySig
+    BeBlank(): PrivateScope, Public, HideBySig
+    BeBlank(String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.TimeSpanAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Methods:
+    Before(DateTime): PrivateScope, Public, HideBySig
+    Before(DateTime, String, Object[]): PrivateScope, Public, HideBySig
+    After(DateTime): PrivateScope, Public, HideBySig
+    After(DateTime, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.TypeAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Type Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    Be(): PrivateScope, Public, HideBySig
+    Be(String, Object[]): PrivateScope, Public, HideBySig
+    Be(Type): PrivateScope, Public, HideBySig
+    Be(Type, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(): PrivateScope, Public, HideBySig
+    NotBe(String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(Type): PrivateScope, Public, HideBySig
+    NotBe(Type, String, Object[]): PrivateScope, Public, HideBySig
+    BeDecoratedWith(): PrivateScope, Public, HideBySig
+    BeDecoratedWith(String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.TypeExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Types(Assembly): PrivateScope, Public, Static, HideBySig
+    Methods(Type): PrivateScope, Public, Static, HideBySig
+    Methods(TypeSelector): PrivateScope, Public, Static, HideBySig
+    Properties(Type): PrivateScope, Public, Static, HideBySig
+    Properties(TypeSelector): PrivateScope, Public, Static, HideBySig
+Class FluentAssertions.Assertions.TypeSelector: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[System.Type]
+    System.Collections.IEnumerable
+  Methods:
+    ThatDeriveFrom(): PrivateScope, Public, HideBySig
+    ThatImplement(): PrivateScope, Public, HideBySig
+    ThatAreDecoratedWith(): PrivateScope, Public, HideBySig
+    ThatAreInNamespace(String): PrivateScope, Public, HideBySig
+    ThatAreUnderNamespace(String): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class FluentAssertions.Assertions.XAttributeAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Xml.Linq.XAttribute Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    Be(XAttribute): PrivateScope, Public, HideBySig
+    Be(XAttribute, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(XAttribute): PrivateScope, Public, HideBySig
+    NotBe(XAttribute, String, Object[]): PrivateScope, Public, HideBySig
+    BeNull(): PrivateScope, Public, HideBySig
+    BeNull(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeNull(): PrivateScope, Public, HideBySig
+    NotBeNull(String, Object[]): PrivateScope, Public, HideBySig
+    HaveValue(String): PrivateScope, Public, HideBySig
+    HaveValue(String, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.XDocumentAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Xml.Linq.XDocument Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    Be(XDocument): PrivateScope, Public, HideBySig
+    Be(XDocument, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(XDocument): PrivateScope, Public, HideBySig
+    NotBe(XDocument, String, Object[]): PrivateScope, Public, HideBySig
+    BeNull(): PrivateScope, Public, HideBySig
+    BeNull(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeNull(): PrivateScope, Public, HideBySig
+    NotBeNull(String, Object[]): PrivateScope, Public, HideBySig
+    HaveRoot(String): PrivateScope, Public, HideBySig
+    HaveRoot(String, String, Object[]): PrivateScope, Public, HideBySig
+    HaveElement(String): PrivateScope, Public, HideBySig
+    HaveElement(String, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Assertions.XElementAssertions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Xml.Linq.XElement Subject 'get set' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    Be(XElement): PrivateScope, Public, HideBySig
+    Be(XElement, String, Object[]): PrivateScope, Public, HideBySig
+    NotBe(XElement): PrivateScope, Public, HideBySig
+    NotBe(XElement, String, Object[]): PrivateScope, Public, HideBySig
+    BeNull(): PrivateScope, Public, HideBySig
+    BeNull(String, Object[]): PrivateScope, Public, HideBySig
+    NotBeNull(): PrivateScope, Public, HideBySig
+    NotBeNull(String, Object[]): PrivateScope, Public, HideBySig
+    HaveAttribute(String, String): PrivateScope, Public, HideBySig
+    HaveAttribute(String, String, String, Object[]): PrivateScope, Public, HideBySig
+    HaveElement(String): PrivateScope, Public, HideBySig
+    HaveElement(String, String, Object[]): PrivateScope, Public, HideBySig
+Class FluentAssertions.Common.FluentDateTimeExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    January(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    February(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    March(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    April(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    May(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    June(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    July(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    August(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    September(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    October(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    November(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    December(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    At(DateTime, TimeSpan): PrivateScope, Public, Static, HideBySig
+    At(DateTime, Int32, Int32, Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    Before(TimeSpan, DateTime): PrivateScope, Public, Static, HideBySig
+    After(TimeSpan, DateTime): PrivateScope, Public, Static, HideBySig
+Class FluentAssertions.Common.TimeSpanConversionExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Milliseconds(Int32): PrivateScope, Public, Static, HideBySig
+    Seconds(Int32): PrivateScope, Public, Static, HideBySig
+    Seconds(Int32, TimeSpan): PrivateScope, Public, Static, HideBySig
+    Minutes(Int32): PrivateScope, Public, Static, HideBySig
+    Minutes(Int32, TimeSpan): PrivateScope, Public, Static, HideBySig
+    Hours(Int32): PrivateScope, Public, Static, HideBySig
+    Hours(Int32, TimeSpan): PrivateScope, Public, Static, HideBySig
+    Days(Int32): PrivateScope, Public, Static, HideBySig
+    Days(Int32, TimeSpan): PrivateScope, Public, Static, HideBySig
+    And(TimeSpan, TimeSpan): PrivateScope, Public, Static, HideBySig
+Class FluentAssertions.Common.UniqueObjectTracker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Track(Object): PrivateScope, Public, HideBySig
+Class FluentAssertions.EventMonitoring.EventMonitoringExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    MonitorEvents(Object): PrivateScope, Public, Static, HideBySig
+    ShouldRaise(Object, String): PrivateScope, Public, Static, HideBySig
+    ShouldRaise(Object, String, String, Object[]): PrivateScope, Public, Static, HideBySig
+    ShouldNotRaise(Object, String): PrivateScope, Public, Static, HideBySig
+    ShouldNotRaise(Object, String, String, Object[]): PrivateScope, Public, Static, HideBySig
+    ShouldRaisePropertyChangeFor(T, Expression`1): PrivateScope, Public, Static, HideBySig
+    ShouldRaisePropertyChangeFor(T, Expression`1, String, Object[]): PrivateScope, Public, Static, HideBySig
+    ShouldNotRaisePropertyChangeFor(T, Expression`1): PrivateScope, Public, Static, HideBySig
+    ShouldNotRaisePropertyChangeFor(T, Expression`1, String, Object[]): PrivateScope, Public, Static, HideBySig
+    WithSender(IEventRecorder, Object): PrivateScope, Public, Static, HideBySig
+    WithArgs(IEventRecorder, Expression`1): PrivateScope, Public, Static, HideBySig
+Interface FluentAssertions.EventMonitoring.IEventRecorder: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[FluentAssertions.EventMonitoring.RecordedEvent]
+    System.Collections.IEnumerable
+  Properties:
+    System.Object EventObject 'get ' : 
+    System.String EventName 'get ' : 
+  Methods:
+    RecordEvent(Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_EventObject(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EventName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class FluentAssertions.EventMonitoring.EventRecorder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Object, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    FluentAssertions.EventMonitoring.IEventRecorder
+    System.Collections.Generic.IEnumerable`1[FluentAssertions.EventMonitoring.RecordedEvent]
+    System.Collections.IEnumerable
+  Properties:
+    System.Object EventObject 'get set' : 
+    System.String EventName 'get set' : 
+  Methods:
+    get_EventObject(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EventName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    RecordEvent(Object[]): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class FluentAssertions.EventMonitoring.RecordedEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Object, System.Object[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.Object] Parameters 'get set' : 
+  Methods:
+    get_Parameters(): PrivateScope, Public, HideBySig, SpecialName
+Class FluentAssertions.Execute: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    FluentAssertions.Verification Verification 'get ' : 
+  Methods:
+    get_Verification(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Verify(Func`1, String, Object, Object, String, Object[]): PrivateScope, Public, Static, HideBySig (Obsolete)
+    Verify(Boolean, String, Object, Object, String, Object[]): PrivateScope, Public, Static, HideBySig (Obsolete)
+    Fail(String, Object, Object, String, Object[], Object[]): PrivateScope, Public, Static, HideBySig (Obsolete)
+Interface FluentAssertions.Formatting.IValueFormatter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    CanHandle(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ToString(Object, UniqueObjectTracker(Optional, HasDefault), Int32(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class FluentAssertions.Formatting.Formatter: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ToString(Object, UniqueObjectTracker(Optional, HasDefault), Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ToStringLine(Object, UniqueObjectTracker(Optional, HasDefault), Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+Class FluentAssertions.Verification: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Fields:
+    System.String ReasonTag = {reason} : Public, Static, Literal, HasDefault
+  Properties:
+    FluentAssertions.Verification UsingLineBreaks 'get ' : 
+    System.String SubjectName 'get set' : 
+  Methods:
+    get_UsingLineBreaks(): PrivateScope, Public, HideBySig, SpecialName
+    get_SubjectName(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_SubjectName(String): PrivateScope, Public, Static, HideBySig, SpecialName
+    SubjectNameOr(String): PrivateScope, Public, Static, HideBySig
+    ForCondition(Boolean): PrivateScope, Public, HideBySig
+    ForCondition(Func`1): PrivateScope, Public, HideBySig
+    BecauseOf(String, Object[]): PrivateScope, Public, HideBySig
+    FailWith(String, Object[]): PrivateScope, Public, HideBySig

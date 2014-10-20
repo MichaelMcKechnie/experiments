@@ -1,0 +1,1821 @@
+  TechTalk.SpecFlow.Languages.xml - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v2.0.50727
+Assembly TechTalk.SpecFlow, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0778194805d6db41: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class BoDi.ObjectContainerException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String, System.Collections.Generic.IEnumerable`1[System.Type]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Interface BoDi.IObjectContainer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.IDisposable
+  Methods:
+    RegisterTypeAs(String(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RegisterInstanceAs(TInterface, String(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RegisterInstanceAs(Object, Type, String(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Resolve(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Resolve(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Resolve(Type, String(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface BoDi.IContainedInstance: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    BoDi.IObjectContainer Container 'get ' : 
+  Methods:
+    get_Container(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class BoDi.ObjectContainer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(BoDi.IObjectContainer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    BoDi.IObjectContainer
+    System.IDisposable
+  Methods:
+    RegisterTypeAs(Type, String(Optional, HasDefault)): PrivateScope, Public, HideBySig
+    RegisterTypeAs(String(Optional, HasDefault)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    RegisterInstanceAs(Object, Type, String(Optional, HasDefault)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    RegisterInstanceAs(TInterface, String(Optional, HasDefault)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    RegisterFromConfiguration(): PrivateScope, Public, HideBySig
+    RegisterFromConfiguration(ContainerRegistrationCollection): PrivateScope, Public, HideBySig
+    Resolve(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Resolve(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Resolve(Type, String(Optional, HasDefault)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class BoDi.BoDiConfigurationSection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationSection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    BoDi.ContainerRegistrationCollection Registrations 'get set' : 
+  Methods:
+    get_Registrations(): PrivateScope, Public, HideBySig, SpecialName
+    set_Registrations(ContainerRegistrationCollection): PrivateScope, Public, HideBySig, SpecialName
+Class BoDi.ContainerRegistrationCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElementCollection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Add(String, String, String(Optional, HasDefault)): PrivateScope, Public, HideBySig
+Class BoDi.ContainerRegistrationConfigElement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Interface 'get set' : 
+    System.String Implementation 'get set' : 
+    System.String Name 'get set' : 
+  Methods:
+    get_Interface(): PrivateScope, Public, HideBySig, SpecialName
+    set_Interface(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Implementation(): PrivateScope, Public, HideBySig, SpecialName
+    set_Implementation(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Assist.EnumerableProjection`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(TechTalk.SpecFlow.Table, System.Collections.Generic.IEnumerable`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[TechTalk.SpecFlow.Assist.Projection`1[T]]
+    System.Collections.IEnumerable
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class TechTalk.SpecFlow.Assist.ProjectionEnumerator`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(System.Collections.Generic.IEnumerable`1[T], System.Collections.Generic.IEnumerable`1[System.String]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerator`1[TechTalk.SpecFlow.Assist.Projection`1[T]]
+    System.IDisposable
+    System.Collections.IEnumerator
+  Properties:
+    TechTalk.SpecFlow.Assist.Projection`1[T] Current 'get ' : 
+  Methods:
+    get_Current(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Reset(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.Projection`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(T, System.Collections.Generic.IEnumerable`1[System.String]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class TechTalk.SpecFlow.Assist.TEHelpers: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    CreateTheInstanceWithTheDefaultConstructor(Table): PrivateScope, Assembly, Static, HideBySig
+    CreateTheInstanceWithTheValuesFromTheTable(Table): PrivateScope, Assembly, Static, HideBySig
+    ThisTypeHasADefaultConstructor(): PrivateScope, Assembly, Static, HideBySig
+    GetConstructorMatchingToColumnNames(Table): PrivateScope, Assembly, Static, HideBySig
+    IsPropertyMatchingToColumnName(PropertyInfo, String): PrivateScope, Assembly, Static, HideBySig
+    MatchesThisColumnName(String, String): PrivateScope, Assembly, Static, HideBySig
+    LoadInstanceWithKeyValuePairs(Table, T): PrivateScope, Assembly, Static, HideBySig
+    GetPropertiesThatNeedToBeSet(Table): PrivateScope, Assembly, Static, HideBySig
+    GetTypeHandlersForFieldValuePairs(): PrivateScope, Assembly, Static, HideBySig
+    GetTheProperInstanceTable(Table): PrivateScope, Assembly, Static, HideBySig
+Class TechTalk.SpecFlow.Assist.TEHelpers+PropertyHandler: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TechTalk.SpecFlow.TableRow Row 'get set' : 
+    System.String PropertyName 'get set' : 
+    System.Func`2[TechTalk.SpecFlow.TableRow,System.Object] Handler 'get set' : 
+  Methods:
+    get_Row(): PrivateScope, Public, HideBySig, SpecialName
+    set_Row(TableRow): PrivateScope, Public, HideBySig, SpecialName
+    get_PropertyName(): PrivateScope, Public, HideBySig, SpecialName
+    set_PropertyName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Handler(): PrivateScope, Public, HideBySig, SpecialName
+    set_Handler(Func`2): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Assist.InstanceComparisonExtensionMethods: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    CompareToInstance(Table, T): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Assist.TableHelpers: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Id(TableRow): PrivateScope, Public, Static, HideBySig
+    Value(TableRow): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Assist.ComparisonException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Interface TechTalk.SpecFlow.Assist.IValueComparer: AutoLayout, AnsiClass, Class, ClassSemanticsMask, Abstract
+  Methods:
+    CanCompare(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TheseValuesAreTheSame(String, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Assist.PivotTable: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Table): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetInstanceTable(Int32): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ProjectionExtensionMethods: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ToProjection(IEnumerable`1, Table(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ToProjection(Table): PrivateScope, Public, Static, HideBySig
+    ToProjectionOfSet(Table, IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    ToProjectionOfInstance(Table, T): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Assist.PropertyExtensionMethods: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetPropertyValue(Object, String): PrivateScope, Public, Static, HideBySig
+    SetPropertyValue(Object, String, Object): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Assist.RowExtensionMethods: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetString(TableRow, String): PrivateScope, Public, Static, HideBySig
+    GetInt32(TableRow, String): PrivateScope, Public, Static, HideBySig
+    GetInt64(TableRow, String): PrivateScope, Public, Static, HideBySig
+    GetDecimal(TableRow, String): PrivateScope, Public, Static, HideBySig
+    GetDateTime(TableRow, String): PrivateScope, Public, Static, HideBySig
+    GetBoolean(TableRow, String): PrivateScope, Public, Static, HideBySig
+    GetDouble(TableRow, String): PrivateScope, Public, Static, HideBySig
+    GetSingle(TableRow, String): PrivateScope, Public, Static, HideBySig
+    GetChar(TableRow, String): PrivateScope, Public, Static, HideBySig
+    GetEnumFromSingleInstanceRow(TableRow): PrivateScope, Assembly, Static, HideBySig
+    GetEnum(TableRow, String): PrivateScope, Public, Static, HideBySig
+    GetGuid(TableRow, String): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Assist.SetComparisonExtensionMethods: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    CompareToSet(Table, IEnumerable`1): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Assist.SetComparer`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(TechTalk.SpecFlow.Table): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CompareToSet(IEnumerable`1): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.TableHelperExtensionMethods: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    CreateInstance(Table): PrivateScope, Public, Static, HideBySig
+    CreateInstance(Table, Func`1): PrivateScope, Public, Static, HideBySig
+    FillInstance(Table, T): PrivateScope, Public, Static, HideBySig
+    CreateSet(Table): PrivateScope, Public, Static, HideBySig
+    CreateSet(Table, Func`1): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueComparers.BoolValueComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Assist.IValueComparer
+  Methods:
+    CanCompare(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TheseValuesAreTheSame(String, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueComparers.FloatValueComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Assist.IValueComparer
+  Methods:
+    CanCompare(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TheseValuesAreTheSame(String, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueComparers.DoubleValueComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Assist.IValueComparer
+  Methods:
+    CanCompare(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TheseValuesAreTheSame(String, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueComparers.DateTimeValueComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Assist.IValueComparer
+  Methods:
+    CanCompare(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TheseValuesAreTheSame(String, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueComparers.DecimalValueComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Assist.IValueComparer
+  Methods:
+    CanCompare(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TheseValuesAreTheSame(String, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueComparers.DefaultValueComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Assist.IValueComparer
+  Methods:
+    CanCompare(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TheseValuesAreTheSame(String, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueComparers.GuidValueComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Assist.IValueComparer
+  Methods:
+    CanCompare(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TheseValuesAreTheSame(String, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.BoolValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.ByteValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.CharValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.LongValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableByteValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.Byte]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableLongValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.Int64]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableSByteValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.SByte]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableFloatValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.Single]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableShortValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.Int16]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableULongValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.UInt64]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableUShortValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.UInt16]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.SByteValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.FloatValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableUIntValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.UInt32]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.ShortValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.UIntValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.EnumValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String, Type): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.GuidValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableCharValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.Char]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableDoubleValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.Double]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.DoubleValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.DateTimeValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.DecimalValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.IntValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableBoolValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.Boolean]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableDateTimeValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.DateTime]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableDecimalValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.Decimal]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableGuidValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.Guid]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.NullableIntValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Func`2[System.String,System.Int32]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.StringValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.ULongValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Assist.ValueRetrievers.UShortValueRetriever: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetValue(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Async.AsyncContext: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Async.IAsyncTestExecutor): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TechTalk.SpecFlow.Async.AsyncContext Current 'get ' : 
+  Methods:
+    get_Current(): PrivateScope, Public, Static, HideBySig, SpecialName
+    EnqueueCallback(Action): PrivateScope, Public, HideBySig
+    EnqueueCallback(Action[]): PrivateScope, Public, HideBySig
+    EnqueueConditional(Func`1): PrivateScope, Public, HideBySig
+    EnqueueDelay(TimeSpan): PrivateScope, Public, HideBySig
+    EnqueueDelay(Double): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Steps: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Methods:
+    Given(String): PrivateScope, Public, HideBySig
+    Given(String, Table): PrivateScope, Public, HideBySig
+    Given(String, String): PrivateScope, Public, HideBySig
+    Given(String, String, Table): PrivateScope, Public, HideBySig
+    When(String): PrivateScope, Public, HideBySig
+    When(String, Table): PrivateScope, Public, HideBySig
+    When(String, String): PrivateScope, Public, HideBySig
+    When(String, String, Table): PrivateScope, Public, HideBySig
+    Then(String): PrivateScope, Public, HideBySig
+    Then(String, Table): PrivateScope, Public, HideBySig
+    Then(String, String): PrivateScope, Public, HideBySig
+    Then(String, String, Table): PrivateScope, Public, HideBySig
+    But(String): PrivateScope, Public, HideBySig
+    But(String, Table): PrivateScope, Public, HideBySig
+    But(String, String): PrivateScope, Public, HideBySig
+    But(String, String, Table): PrivateScope, Public, HideBySig
+    And(String): PrivateScope, Public, HideBySig
+    And(String, Table): PrivateScope, Public, HideBySig
+    And(String, String): PrivateScope, Public, HideBySig
+    And(String, String, Table): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Async.AsyncSteps: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :TechTalk.SpecFlow.Steps
+  Methods:
+    EnqueueCallback(Action): PrivateScope, Public, HideBySig
+    EnqueueCallback(Action[]): PrivateScope, Public, HideBySig
+    EnqueueConditional(Func`1): PrivateScope, Public, HideBySig
+    EnqueueDelay(TimeSpan): PrivateScope, Public, HideBySig
+    EnqueueDelay(Double): PrivateScope, Public, HideBySig
+Interface TechTalk.SpecFlow.ITestRunner: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    TechTalk.SpecFlow.FeatureContext FeatureContext 'get ' : 
+    TechTalk.SpecFlow.ScenarioContext ScenarioContext 'get ' : 
+  Methods:
+    get_FeatureContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ScenarioContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    InitializeTestRunner(Assembly[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnFeatureStart(FeatureInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnFeatureEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnScenarioStart(ScenarioInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CollectScenarioErrors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnScenarioEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnTestRunEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Given(String, String, Table): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    When(String, String, Table): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Then(String, String, Table): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    And(String, String, Table): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    But(String, String, Table): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Pending(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Async.AsyncTestRunner: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Infrastructure.ITestExecutionEngine): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.ITestRunner
+  Properties:
+    TechTalk.SpecFlow.FeatureContext FeatureContext 'get ' : 
+    TechTalk.SpecFlow.ScenarioContext ScenarioContext 'get ' : 
+    TechTalk.SpecFlow.Async.IAsyncTestExecutor AsyncTestExecutor 'get ' : 
+  Methods:
+    get_FeatureContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ScenarioContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AsyncTestExecutor(): PrivateScope, Public, HideBySig, SpecialName
+    UnregisterAsyncTestExecutor(): PrivateScope, Public, HideBySig
+    RegisterAsyncTestExecutor(ITestRunner, IAsyncTestExecutor): PrivateScope, Public, Static, HideBySig
+    RegisterAsyncTestExecutor(IAsyncTestExecutor): PrivateScope, Public, HideBySig
+    InitializeTestRunner(Assembly[]): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnFeatureStart(FeatureInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnFeatureEnd(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnTestRunEnd(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnScenarioStart(ScenarioInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CollectScenarioErrors(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnScenarioEnd(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Given(String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    When(String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Then(String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    And(String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    But(String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Pending(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.Async.IAsyncTestExecutor: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.IDisposable
+  Methods:
+    EnqueueDelay(TimeSpan): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnqueueConditional(Func`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnqueueCallback(Action): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnqueueCallback(Action[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnqueueWithNewContext(Action): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnqueueTestComplete(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Bindings.BindingScope: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Tag 'get set' : 
+    System.String FeatureTitle 'get set' : 
+    System.String ScenarioTitle 'get set' : 
+  Methods:
+    get_Tag(): PrivateScope, Public, HideBySig, SpecialName
+    get_FeatureTitle(): PrivateScope, Public, HideBySig, SpecialName
+    get_ScenarioTitle(): PrivateScope, Public, HideBySig, SpecialName
+    Match(StepContext, Int32&(Out)): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Bindings.ExpressionMemberAccessor: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetPropertyInfo(Expression`1): PrivateScope, Public, Static, HideBySig
+    GetMethodInfo(Expression`1): PrivateScope, Public, Static, HideBySig
+    GetMemberInfo(Expression): PrivateScope, Public, Static, HideBySig
+Interface TechTalk.SpecFlow.Bindings.IBindingFactory: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    CreateEventBinding(MethodInfo, BindingScope): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreateStepBinding(BindingType, String, MethodInfo, BindingScope): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreateStepArgumentTransformation(String, MethodInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Bindings.BindingFactory: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(BoDi.IObjectContainer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TechTalk.SpecFlow.Configuration.RuntimeConfiguration, TechTalk.SpecFlow.ErrorHandling.IErrorProvider): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Bindings.IBindingFactory
+  Methods:
+    CreateEventBinding(MethodInfo, BindingScope): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CreateStepBinding(BindingType, String, MethodInfo, BindingScope): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CreateStepArgumentTransformation(String, MethodInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.Bindings.IScopedBinding: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Boolean IsScoped 'get ' : 
+    TechTalk.SpecFlow.Bindings.BindingScope BindingScope 'get ' : 
+  Methods:
+    get_IsScoped(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BindingScope(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TechTalk.SpecFlow.Bindings.IHookBinding: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    TechTalk.SpecFlow.Bindings.IScopedBinding
+  Methods:
+    Invoke(IContextManager, ITestTracer): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface TechTalk.SpecFlow.Bindings.IStepDefinitionBinding: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    TechTalk.SpecFlow.Bindings.IScopedBinding
+  Properties:
+    System.Reflection.MethodInfo MethodInfo 'get ' : 
+    System.Type[] ParameterTypes 'get ' : 
+  Methods:
+    get_MethodInfo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ParameterTypes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Invoke(IContextManager, ITestTracer, Object[], TimeSpan&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Bindings.StepContext: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.FeatureInfo, TechTalk.SpecFlow.ScenarioInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TechTalk.SpecFlow.FeatureInfo FeatureInfo 'get set' : 
+    TechTalk.SpecFlow.ScenarioInfo ScenarioInfo 'get set' : 
+    System.Collections.Generic.IEnumerable`1[System.String] Tags 'get ' : 
+  Methods:
+    get_FeatureInfo(): PrivateScope, Public, HideBySig, SpecialName
+    get_ScenarioInfo(): PrivateScope, Public, HideBySig, SpecialName
+    get_Tags(): PrivateScope, Public, HideBySig, SpecialName
+Struct TechTalk.SpecFlow.Bindings.StepDefinitionKeyword: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    TechTalk.SpecFlow.Bindings.StepDefinitionKeyword Given = 1 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.StepDefinitionKeyword When = 2 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.StepDefinitionKeyword Then = 3 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.StepDefinitionKeyword And = 4 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.StepDefinitionKeyword But = 5 : Public, Static, Literal, HasDefault
+Class TechTalk.SpecFlow.Bindings.MethodBinding: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    System.Delegate BindingAction 'get set' : 
+    System.Reflection.MethodInfo MethodInfo 'get set' : 
+    System.Type[] ParameterTypes 'get set' : 
+    System.Type ReturnType 'get set' : 
+  Methods:
+    get_BindingAction(): PrivateScope, Public, HideBySig, SpecialName
+    get_MethodInfo(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ParameterTypes(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ReturnType(): PrivateScope, Public, HideBySig, SpecialName
+    InvokeAction(IContextManager, Object[], ITestTracer): PrivateScope, Public, HideBySig
+    InvokeAction(IContextManager, Object[], ITestTracer, TimeSpan&(Out)): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedAction`5[T1,T2,T3,T4,T5]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedAction`6[T1,T2,T3,T4,T5,T6]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: T6
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5, T6): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, T6, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedAction`7[T1,T2,T3,T4,T5,T6,T7]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: T6
+  Type parameter: T7
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5, T6, T7): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedAction`8[T1,T2,T3,T4,T5,T6,T7,T8]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: T6
+  Type parameter: T7
+  Type parameter: T8
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5, T6, T7, T8): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedAction`9[T1,T2,T3,T4,T5,T6,T7,T8,T9]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: T6
+  Type parameter: T7
+  Type parameter: T8
+  Type parameter: T9
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5, T6, T7, T8, T9): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedAction`10[T1,T2,T3,T4,T5,T6,T7,T8,T9,T10]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: T6
+  Type parameter: T7
+  Type parameter: T8
+  Type parameter: T9
+  Type parameter: T10
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedFunc`6[T1,T2,T3,T4,T5,TResult]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: TResult
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedFunc`7[T1,T2,T3,T4,T5,T6,TResult]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: T6
+  Type parameter: TResult
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5, T6): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, T6, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedFunc`8[T1,T2,T3,T4,T5,T6,T7,TResult]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: T6
+  Type parameter: T7
+  Type parameter: TResult
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5, T6, T7): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedFunc`9[T1,T2,T3,T4,T5,T6,T7,T8,TResult]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: T6
+  Type parameter: T7
+  Type parameter: T8
+  Type parameter: TResult
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5, T6, T7, T8): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedFunc`10[T1,T2,T3,T4,T5,T6,T7,T8,T9,TResult]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: T6
+  Type parameter: T7
+  Type parameter: T8
+  Type parameter: T9
+  Type parameter: TResult
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5, T6, T7, T8, T9): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Bindings.MethodBinding+ExtendedFunc`11[T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,TResult]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+  Type parameter: T4
+  Type parameter: T5
+  Type parameter: T6
+  Type parameter: T7
+  Type parameter: T8
+  Type parameter: T9
+  Type parameter: T10
+  Type parameter: TResult
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.Configuration.IRuntimeConfigurationProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    LoadConfiguration(RuntimeConfiguration): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPlugins(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Configuration.DefaultRuntimeConfigurationProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Configuration.IRuntimeConfigurationProvider
+  Methods:
+    LoadConfiguration(RuntimeConfiguration): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPlugins(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.Configuration.IRuntimeConfigurationDefaultsProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    SetDefaultConfiguration(RuntimeConfiguration): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Infrastructure.DefaultDependencyProvider: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    RegisterDefaults(ObjectContainer): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.Infrastructure.IContextManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    TechTalk.SpecFlow.FeatureContext FeatureContext 'get ' : 
+    TechTalk.SpecFlow.ScenarioContext ScenarioContext 'get ' : 
+  Methods:
+    get_FeatureContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ScenarioContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    InitializeFeatureContext(FeatureInfo, CultureInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CleanupFeatureContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InitializeScenarioContext(ScenarioInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CleanupScenarioContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Infrastructure.ContextManagerExtensions: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetStepContext(IContextManager): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Infrastructure.ContextManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Tracing.ITestTracer, BoDi.IObjectContainer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Infrastructure.IContextManager
+    System.IDisposable
+  Properties:
+    TechTalk.SpecFlow.FeatureContext FeatureContext 'get ' : 
+    TechTalk.SpecFlow.ScenarioContext ScenarioContext 'get ' : 
+  Methods:
+    get_FeatureContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ScenarioContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    InitializeFeatureContext(FeatureInfo, CultureInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CleanupFeatureContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    InitializeScenarioContext(ScenarioInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CleanupScenarioContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.Infrastructure.IRuntimePlugin: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    RegisterDefaults(ObjectContainer): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RegisterCustomizations(ObjectContainer, RuntimeConfiguration): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Infrastructure.PluginDescriptor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Infrastructure.RuntimePluginAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type PluginType 'get set' : 
+  Methods:
+    get_PluginType(): PrivateScope, Public, HideBySig, SpecialName
+Interface TechTalk.SpecFlow.Infrastructure.IRuntimePluginLoader: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    LoadRuntimePlugin(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Infrastructure.RuntimePluginLoader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Infrastructure.IRuntimePluginLoader
+  Methods:
+    LoadRuntimePlugin(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Infrastructure.StepFailureEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Bindings.IStepDefinitionBinding, TechTalk.SpecFlow.Bindings.StepContext, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TechTalk.SpecFlow.Bindings.IStepDefinitionBinding StepDefiniton 'get set' : 
+    TechTalk.SpecFlow.Bindings.StepContext StepContext 'get set' : 
+    System.Exception Exception 'get set' : 
+    Boolean IsHandled 'get set' : 
+  Methods:
+    get_StepDefiniton(): PrivateScope, Public, HideBySig, SpecialName
+    set_StepDefiniton(IStepDefinitionBinding): PrivateScope, Public, HideBySig, SpecialName
+    get_StepContext(): PrivateScope, Public, HideBySig, SpecialName
+    set_StepContext(StepContext): PrivateScope, Public, HideBySig, SpecialName
+    get_Exception(): PrivateScope, Public, HideBySig, SpecialName
+    set_Exception(Exception): PrivateScope, Public, HideBySig, SpecialName
+    get_IsHandled(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsHandled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Interface TechTalk.SpecFlow.Infrastructure.IStepErrorHandler: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    OnStepFailure(TestExecutionEngine, StepFailureEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface TechTalk.SpecFlow.Infrastructure.ITestExecutionEngine: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    TechTalk.SpecFlow.FeatureContext FeatureContext 'get ' : 
+    TechTalk.SpecFlow.ScenarioContext ScenarioContext 'get ' : 
+  Methods:
+    get_FeatureContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ScenarioContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Initialize(Assembly[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnFeatureStart(FeatureInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnFeatureEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnScenarioStart(ScenarioInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnAfterLastStep(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnScenarioEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnTestRunEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Step(StepDefinitionKeyword, String, String, Table): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Pending(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface TechTalk.SpecFlow.Infrastructure.ITestRunnerFactory: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Create(Assembly): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface TechTalk.SpecFlow.Infrastructure.IStepDefinitionMatcher: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetMatches(StepArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetMatchesWithoutScopeCheck(StepArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetMatchesWithoutParamCheck(StepArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Infrastructure.StepDefinitionMatcher: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Bindings.IBindingRegistry, TechTalk.SpecFlow.Bindings.IStepArgumentTypeConverter, TechTalk.SpecFlow.Infrastructure.IContextManager): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Infrastructure.IStepDefinitionMatcher
+  Methods:
+    GetMatches(StepArgs): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetMatchesWithoutParamCheck(StepArgs): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetMatchesWithoutScopeCheck(StepArgs): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Infrastructure.TestRunnerFactory: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(BoDi.IObjectContainer, TechTalk.SpecFlow.Configuration.RuntimeConfiguration): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Infrastructure.ITestRunnerFactory
+  Methods:
+    Create(Assembly): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Compatibility.CultureInfoHelper: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetCultureInfo(String): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Compatibility.EnumHelper: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetValues(Type): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Compatibility.ExceptionHelper: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    PreserveStackTrace(Exception, String(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Compatibility.MonoHelper: NotPublic
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsMono 'get set' : 
+  Methods:
+    get_IsMono(): PrivateScope, Public, Static, HideBySig, SpecialName
+    PreserveStackTrace(Exception): PrivateScope, Public, Static, HideBySig
+    GetLoadedAssembly(String): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Configuration.ConfigDefaults: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String FeatureLanguage = en-US : Public, Static, Literal, HasDefault
+    System.String ToolLanguage =  : Public, Static, Literal, HasDefault
+    System.String UnitTestProviderName = NUnit : Public, Static, Literal, HasDefault
+    Boolean DetectAmbiguousMatches = True : Public, Static, Literal, HasDefault
+    Boolean StopAtFirstError = False : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Configuration.MissingOrPendingStepsOutcome MissingOrPendingStepsOutcome = 0 : Public, Static, Literal, HasDefault
+    Boolean TraceSuccessfulSteps = True : Public, Static, Literal, HasDefault
+    Boolean TraceTimings = False : Public, Static, Literal, HasDefault
+    System.String MinTracedDuration = 0:0:0.1 : Public, Static, Literal, HasDefault
+    Boolean AllowDebugGeneratedFiles = False : Public, Static, Literal, HasDefault
+    Boolean AllowRowTests = True : Public, Static, Literal, HasDefault
+    Boolean GenerateAsyncTests = False : Public, Static, Literal, HasDefault
+    System.String GeneratorPath =  : Public, Static, Literal, HasDefault
+Class TechTalk.SpecFlow.Configuration.ConfigurationServices: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    CreateInstance(Type): PrivateScope, Public, Static, HideBySig
+Struct TechTalk.SpecFlow.Configuration.MissingOrPendingStepsOutcome: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    TechTalk.SpecFlow.Configuration.MissingOrPendingStepsOutcome Pending = 0 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Configuration.MissingOrPendingStepsOutcome Inconclusive = 1 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Configuration.MissingOrPendingStepsOutcome Ignore = 2 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Configuration.MissingOrPendingStepsOutcome Error = 3 : Public, Static, Literal, HasDefault
+Class TechTalk.SpecFlow.CultureInfoScope: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Globalization.CultureInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct TechTalk.SpecFlow.ProgrammingLanguage: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    TechTalk.SpecFlow.ProgrammingLanguage Other = 0 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.ProgrammingLanguage CSharp = 1 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.ProgrammingLanguage VB = 2 : Public, Static, Literal, HasDefault
+Class TechTalk.SpecFlow.Bindings.StepTransformationBinding: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.Bindings.MethodBinding
+    Void .ctor(TechTalk.SpecFlow.Configuration.RuntimeConfiguration, TechTalk.SpecFlow.ErrorHandling.IErrorProvider, System.String, System.Reflection.MethodInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Text.RegularExpressions.Regex Regex 'get set' : 
+  Methods:
+    get_Regex(): PrivateScope, Public, HideBySig, SpecialName
+    Transform(IContextManager, Object, ITestTracer, IStepArgumentTypeConverter, CultureInfo): PrivateScope, Public, HideBySig
+Interface TechTalk.SpecFlow.Bindings.IStepArgumentTypeConverter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Convert(Object, Type, CultureInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CanConvert(Object, Type, CultureInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Bindings.StepArgumentTypeConverter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Tracing.ITestTracer, TechTalk.SpecFlow.Bindings.IBindingRegistry, TechTalk.SpecFlow.Infrastructure.IContextManager): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Bindings.IStepArgumentTypeConverter
+  Properties:
+    System.Collections.Generic.ICollection`1[TechTalk.SpecFlow.Bindings.StepTransformationBinding] StepTransformations 'get set' : 
+  Methods:
+    get_StepTransformations(): PrivateScope, Public, HideBySig, SpecialName
+    Convert(Object, Type, CultureInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CanConvert(Object, Type, CultureInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CanConvertSimple(Type, Object, CultureInfo): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.BindingAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.StepDefinitionBaseAttribute: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String, TechTalk.SpecFlow.Bindings.BindingType): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TechTalk.SpecFlow.Bindings.BindingType[] Types 'get set' : 
+    System.String Regex 'get set' : 
+  Methods:
+    get_Types(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Regex(): PrivateScope, Public, HideBySig, SpecialName
+    set_Regex(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.GivenAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.StepDefinitionBaseAttribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.WhenAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.StepDefinitionBaseAttribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.ThenAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.StepDefinitionBaseAttribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.StepDefinitionAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.StepDefinitionBaseAttribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.HookAttribute: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(TechTalk.SpecFlow.Bindings.BindingEvent, System.String[]): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TechTalk.SpecFlow.Bindings.BindingEvent Event 'get set' : 
+    System.String[] Tags 'get set' : 
+  Methods:
+    get_Event(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Tags(): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.BeforeTestRunAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.HookAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.AfterTestRunAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.HookAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.BeforeFeatureAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.HookAttribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.AfterFeatureAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.HookAttribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.BeforeScenarioAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.HookAttribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.BeforeAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.BeforeScenarioAttribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.AfterScenarioAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.HookAttribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.AfterAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.AfterScenarioAttribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.BeforeScenarioBlockAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.HookAttribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.AfterScenarioBlockAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.HookAttribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.BeforeStepAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.HookAttribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.AfterStepAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.HookAttribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.StepArgumentTransformationAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Regex 'get set' : 
+  Methods:
+    get_Regex(): PrivateScope, Public, HideBySig, SpecialName
+    set_Regex(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.ScopeAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Tag 'get set' : 
+    System.String Feature 'get set' : 
+    System.String Scenario 'get set' : 
+  Methods:
+    get_Tag(): PrivateScope, Public, HideBySig, SpecialName
+    set_Tag(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Feature(): PrivateScope, Public, HideBySig, SpecialName
+    set_Feature(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Scenario(): PrivateScope, Public, HideBySig, SpecialName
+    set_Scenario(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.StepScopeAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit (Obsolete)
+  :TechTalk.SpecFlow.ScopeAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.SpecFlowException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.BindingException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :TechTalk.SpecFlow.SpecFlowException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.Bindings.BindingMatch: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Bindings.IStepDefinitionBinding, TechTalk.SpecFlow.Bindings.StepArgs, System.String[], System.Object[], Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TechTalk.SpecFlow.Bindings.IStepDefinitionBinding, System.Text.RegularExpressions.Match, System.Object[], TechTalk.SpecFlow.Bindings.StepArgs, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TechTalk.SpecFlow.Bindings.IStepDefinitionBinding StepBinding 'get set' : 
+    TechTalk.SpecFlow.Bindings.StepArgs StepArgs 'get set' : 
+    System.String[] RegexArguments 'get set' : 
+    System.Object[] ExtraArguments 'get set' : 
+    Int32 ScopeMatches 'get set' : 
+    Boolean IsScoped 'get ' : 
+    System.Object[] Arguments 'get set' : 
+  Methods:
+    get_StepBinding(): PrivateScope, Public, HideBySig, SpecialName
+    get_StepArgs(): PrivateScope, Public, HideBySig, SpecialName
+    get_RegexArguments(): PrivateScope, Public, HideBySig, SpecialName
+    get_ExtraArguments(): PrivateScope, Public, HideBySig, SpecialName
+    get_ScopeMatches(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScopeMatches(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_IsScoped(): PrivateScope, Public, HideBySig, SpecialName
+    get_Arguments(): PrivateScope, Public, HideBySig, SpecialName
+Struct TechTalk.SpecFlow.Bindings.BindingEvent: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    TechTalk.SpecFlow.Bindings.BindingEvent TestRunStart = 0 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingEvent TestRunEnd = 1 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingEvent FeatureStart = 2 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingEvent FeatureEnd = 3 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingEvent ScenarioStart = 4 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingEvent ScenarioEnd = 5 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingEvent BlockStart = 6 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingEvent BlockEnd = 7 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingEvent StepStart = 8 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingEvent StepEnd = 9 : Public, Static, Literal, HasDefault
+Interface TechTalk.SpecFlow.Bindings.IBindingRegistry: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[TechTalk.SpecFlow.Bindings.StepDefinitionBinding]
+    System.Collections.IEnumerable
+  Properties:
+    System.Collections.Generic.ICollection`1[TechTalk.SpecFlow.Bindings.StepTransformationBinding] StepTransformations 'get ' : 
+  Methods:
+    BuildBindingsFromAssembly(Assembly): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetEvents(BindingEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_StepTransformations(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class TechTalk.SpecFlow.Bindings.BindingRegistry: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.ErrorHandling.IErrorProvider, TechTalk.SpecFlow.Bindings.IBindingFactory): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Bindings.IBindingRegistry
+    System.Collections.Generic.IEnumerable`1[TechTalk.SpecFlow.Bindings.StepDefinitionBinding]
+    System.Collections.IEnumerable
+  Properties:
+    System.Collections.Generic.ICollection`1[TechTalk.SpecFlow.Bindings.StepTransformationBinding] StepTransformations 'get ' : 
+  Methods:
+    BuildBindingsFromAssembly(Assembly): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    BuildBindingsFromType(Type): PrivateScope, Assembly, HideBySig
+    GetEvents(BindingEvent): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_StepTransformations(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct TechTalk.SpecFlow.Bindings.BindingType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    TechTalk.SpecFlow.Bindings.BindingType Given = 1 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingType When = 2 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Bindings.BindingType Then = 3 : Public, Static, Literal, HasDefault
+Class TechTalk.SpecFlow.Bindings.BindingTypeHelper: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ToBindingType(ScenarioBlock): PrivateScope, Public, Static, HideBySig
+    ToScenarioBlock(BindingType): PrivateScope, Public, Static, HideBySig
+    ToStepDefinitionKeyword(BindingType): PrivateScope, Public, Static, HideBySig
+    Equals(ScenarioBlock, BindingType): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Configuration.ConfigurationSectionHandler: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationSection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TechTalk.SpecFlow.Configuration.LanguageConfigElement Language 'get set' : 
+    TechTalk.SpecFlow.Configuration.BindingCultureConfigElement BindingCulture 'get set' : 
+    TechTalk.SpecFlow.Configuration.UnitTestProviderConfigElement UnitTestProvider 'get set' : 
+    TechTalk.SpecFlow.Configuration.GeneratorConfigElement Generator 'get set' : 
+    TechTalk.SpecFlow.Configuration.RuntimeConfigElement Runtime 'get set' : 
+    TechTalk.SpecFlow.Configuration.TraceConfigElement Trace 'get set' : 
+    TechTalk.SpecFlow.Configuration.StepAssemblyCollection StepAssemblies 'get set' : 
+    TechTalk.SpecFlow.Configuration.PluginCollection Plugins 'get set' : 
+  Methods:
+    get_Language(): PrivateScope, Public, HideBySig, SpecialName
+    set_Language(LanguageConfigElement): PrivateScope, Public, HideBySig, SpecialName
+    get_BindingCulture(): PrivateScope, Public, HideBySig, SpecialName
+    set_BindingCulture(BindingCultureConfigElement): PrivateScope, Public, HideBySig, SpecialName
+    get_UnitTestProvider(): PrivateScope, Public, HideBySig, SpecialName
+    set_UnitTestProvider(UnitTestProviderConfigElement): PrivateScope, Public, HideBySig, SpecialName
+    get_Generator(): PrivateScope, Public, HideBySig, SpecialName
+    set_Generator(GeneratorConfigElement): PrivateScope, Public, HideBySig, SpecialName
+    get_Runtime(): PrivateScope, Public, HideBySig, SpecialName
+    set_Runtime(RuntimeConfigElement): PrivateScope, Public, HideBySig, SpecialName
+    get_Trace(): PrivateScope, Public, HideBySig, SpecialName
+    set_Trace(TraceConfigElement): PrivateScope, Public, HideBySig, SpecialName
+    get_StepAssemblies(): PrivateScope, Public, HideBySig, SpecialName
+    set_StepAssemblies(StepAssemblyCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_Plugins(): PrivateScope, Public, HideBySig, SpecialName
+    set_Plugins(PluginCollection): PrivateScope, Public, HideBySig, SpecialName
+    CreateFromXml(String): PrivateScope, Public, Static, HideBySig
+    CreateFromXml(XmlNode): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Configuration.LanguageConfigElement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Feature 'get set' : 
+    System.String Tool 'get set' : 
+  Methods:
+    get_Feature(): PrivateScope, Public, HideBySig, SpecialName
+    set_Feature(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Tool(): PrivateScope, Public, HideBySig, SpecialName
+    set_Tool(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Configuration.BindingCultureConfigElement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Configuration.UnitTestProviderConfigElement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+    System.String GeneratorProvider 'get set' : 
+    System.String RuntimeProvider 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_GeneratorProvider(): PrivateScope, Public, HideBySig, SpecialName
+    set_GeneratorProvider(String): PrivateScope, Public, HideBySig, SpecialName
+    get_RuntimeProvider(): PrivateScope, Public, HideBySig, SpecialName
+    set_RuntimeProvider(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Configuration.RuntimeConfigElement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    BoDi.ContainerRegistrationCollection Dependencies 'get set' : 
+    Boolean DetectAmbiguousMatches 'get set' : 
+    Boolean StopAtFirstError 'get set' : 
+    TechTalk.SpecFlow.Configuration.MissingOrPendingStepsOutcome MissingOrPendingStepsOutcome 'get set' : 
+  Methods:
+    get_Dependencies(): PrivateScope, Public, HideBySig, SpecialName
+    set_Dependencies(ContainerRegistrationCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_DetectAmbiguousMatches(): PrivateScope, Public, HideBySig, SpecialName
+    set_DetectAmbiguousMatches(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_StopAtFirstError(): PrivateScope, Public, HideBySig, SpecialName
+    set_StopAtFirstError(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MissingOrPendingStepsOutcome(): PrivateScope, Public, HideBySig, SpecialName
+    set_MissingOrPendingStepsOutcome(MissingOrPendingStepsOutcome): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Configuration.GeneratorConfigElement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    BoDi.ContainerRegistrationCollection Dependencies 'get set' : 
+    Boolean AllowDebugGeneratedFiles 'get set' : 
+    Boolean AllowRowTests 'get set' : 
+    Boolean GenerateAsyncTests 'get set' : 
+    System.String GeneratorPath 'get set' : 
+  Methods:
+    get_Dependencies(): PrivateScope, Public, HideBySig, SpecialName
+    set_Dependencies(ContainerRegistrationCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowDebugGeneratedFiles(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowDebugGeneratedFiles(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowRowTests(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowRowTests(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_GenerateAsyncTests(): PrivateScope, Public, HideBySig, SpecialName
+    set_GenerateAsyncTests(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_GeneratorPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_GeneratorPath(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Configuration.TraceConfigElement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean TraceSuccessfulSteps 'get set' : 
+    Boolean TraceTimings 'get set' : 
+    System.TimeSpan MinTracedDuration 'get set' : 
+    System.String Listener 'get set' : 
+  Methods:
+    get_TraceSuccessfulSteps(): PrivateScope, Public, HideBySig, SpecialName
+    set_TraceSuccessfulSteps(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_TraceTimings(): PrivateScope, Public, HideBySig, SpecialName
+    set_TraceTimings(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MinTracedDuration(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinTracedDuration(TimeSpan): PrivateScope, Public, HideBySig, SpecialName
+    get_Listener(): PrivateScope, Public, HideBySig, SpecialName
+    set_Listener(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Configuration.StepAssemblyCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElementCollection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.Configuration.StepAssemblyConfigElement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Assembly 'get set' : 
+  Methods:
+    get_Assembly(): PrivateScope, Public, HideBySig, SpecialName
+    set_Assembly(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Configuration.PluginCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElementCollection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[TechTalk.SpecFlow.Configuration.PluginConfigElement]
+Class TechTalk.SpecFlow.Configuration.PluginConfigElement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.ConfigurationElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Configuration.RuntimeConfiguration: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    BoDi.ContainerRegistrationCollection CustomDependencies 'get set' : 
+    System.Globalization.CultureInfo ToolLanguage 'get set' : 
+    System.Globalization.CultureInfo BindingCulture 'get set' : 
+    System.String RuntimeUnitTestProvider 'get set' : 
+    Boolean DetectAmbiguousMatches 'get set' : 
+    Boolean StopAtFirstError 'get set' : 
+    TechTalk.SpecFlow.Configuration.MissingOrPendingStepsOutcome MissingOrPendingStepsOutcome 'get set' : 
+    System.Type TraceListenerType 'get set' : 
+    Boolean TraceSuccessfulSteps 'get set' : 
+    Boolean TraceTimings 'get set' : 
+    System.TimeSpan MinTracedDuration 'get set' : 
+    System.Collections.Generic.IEnumerable`1[System.Reflection.Assembly] AdditionalStepAssemblies 'get ' : 
+  Methods:
+    get_CustomDependencies(): PrivateScope, Public, HideBySig, SpecialName
+    set_CustomDependencies(ContainerRegistrationCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_ToolLanguage(): PrivateScope, Public, HideBySig, SpecialName
+    set_ToolLanguage(CultureInfo): PrivateScope, Public, HideBySig, SpecialName
+    get_BindingCulture(): PrivateScope, Public, HideBySig, SpecialName
+    set_BindingCulture(CultureInfo): PrivateScope, Public, HideBySig, SpecialName
+    get_RuntimeUnitTestProvider(): PrivateScope, Public, HideBySig, SpecialName
+    set_RuntimeUnitTestProvider(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DetectAmbiguousMatches(): PrivateScope, Public, HideBySig, SpecialName
+    set_DetectAmbiguousMatches(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_StopAtFirstError(): PrivateScope, Public, HideBySig, SpecialName
+    set_StopAtFirstError(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MissingOrPendingStepsOutcome(): PrivateScope, Public, HideBySig, SpecialName
+    set_MissingOrPendingStepsOutcome(MissingOrPendingStepsOutcome): PrivateScope, Public, HideBySig, SpecialName
+    get_TraceListenerType(): PrivateScope, Public, HideBySig, SpecialName
+    set_TraceListenerType(Type): PrivateScope, Public, HideBySig, SpecialName
+    get_TraceSuccessfulSteps(): PrivateScope, Public, HideBySig, SpecialName
+    set_TraceSuccessfulSteps(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_TraceTimings(): PrivateScope, Public, HideBySig, SpecialName
+    set_TraceTimings(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MinTracedDuration(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinTracedDuration(TimeSpan): PrivateScope, Public, HideBySig, SpecialName
+    get_AdditionalStepAssemblies(): PrivateScope, Public, HideBySig, SpecialName
+    GetPlugins(): PrivateScope, Public, Static, HideBySig
+    LoadConfiguration(): PrivateScope, Public, HideBySig
+    LoadConfiguration(ConfigurationSectionHandler): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.MissingStepDefinitionException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :TechTalk.SpecFlow.SpecFlowException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.PendingStepException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :TechTalk.SpecFlow.SpecFlowException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.Bindings.HookBinding: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.Bindings.MethodBinding
+    Void .ctor(TechTalk.SpecFlow.Configuration.RuntimeConfiguration, TechTalk.SpecFlow.ErrorHandling.IErrorProvider, System.Reflection.MethodInfo, TechTalk.SpecFlow.Bindings.BindingScope): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Bindings.IHookBinding
+    TechTalk.SpecFlow.Bindings.IScopedBinding
+  Properties:
+    TechTalk.SpecFlow.Bindings.BindingScope BindingScope 'get set' : 
+    Boolean IsScoped 'get ' : 
+  Methods:
+    get_BindingScope(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsScoped(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Invoke(IContextManager, ITestTracer): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.SpecFlowContext: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.Collections.Generic.Dictionary`2[System.String,System.Object]
+  Interfaces:
+    System.IDisposable
+  Methods:
+    TryGetValue(TValue&(Out)): PrivateScope, Public, HideBySig
+    TryGetValue(String, TValue&(Out)): PrivateScope, Public, HideBySig
+    Set(T): PrivateScope, Public, HideBySig
+    Set(T, String): PrivateScope, Public, HideBySig
+    Set(Func`1): PrivateScope, Public, HideBySig
+    Get(): PrivateScope, Public, HideBySig
+    Get(String): PrivateScope, Public, HideBySig
+Class TechTalk.SpecFlow.FeatureContext: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.SpecFlowContext
+    Void .ctor(TechTalk.SpecFlow.FeatureInfo, System.Globalization.CultureInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TechTalk.SpecFlow.FeatureContext Current 'get set' : 
+    TechTalk.SpecFlow.FeatureInfo FeatureInfo 'get set' : 
+    System.Globalization.CultureInfo BindingCulture 'get set' : 
+    System.Diagnostics.Stopwatch Stopwatch 'get set' : 
+  Methods:
+    get_Current(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Current(FeatureContext): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_FeatureInfo(): PrivateScope, Public, HideBySig, SpecialName
+    get_BindingCulture(): PrivateScope, Public, HideBySig, SpecialName
+    get_Stopwatch(): PrivateScope, Assembly, HideBySig, SpecialName
+Class TechTalk.SpecFlow.FeatureInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Globalization.CultureInfo, System.String, System.String, System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Globalization.CultureInfo, System.String, System.String, TechTalk.SpecFlow.ProgrammingLanguage, System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String[] Tags 'get set' : 
+    TechTalk.SpecFlow.ProgrammingLanguage GenerationTargetLanguage 'get set' : 
+    System.String Title 'get set' : 
+    System.String Description 'get set' : 
+    System.Globalization.CultureInfo Language 'get set' : 
+  Methods:
+    get_Tags(): PrivateScope, Public, HideBySig, SpecialName
+    get_GenerationTargetLanguage(): PrivateScope, Public, HideBySig, SpecialName
+    get_Title(): PrivateScope, Public, HideBySig, SpecialName
+    get_Description(): PrivateScope, Public, HideBySig, SpecialName
+    get_Language(): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.TestRunnerDefaultArguments: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Given(ITestRunner, String): PrivateScope, Public, Static, HideBySig
+    Given(ITestRunner, String, String): PrivateScope, Public, Static, HideBySig
+    When(ITestRunner, String): PrivateScope, Public, Static, HideBySig
+    When(ITestRunner, String, String): PrivateScope, Public, Static, HideBySig
+    Then(ITestRunner, String): PrivateScope, Public, Static, HideBySig
+    Then(ITestRunner, String, String): PrivateScope, Public, Static, HideBySig
+    And(ITestRunner, String): PrivateScope, Public, Static, HideBySig
+    And(ITestRunner, String, String): PrivateScope, Public, Static, HideBySig
+    But(ITestRunner, String): PrivateScope, Public, Static, HideBySig
+    But(ITestRunner, String, String): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Bindings.StepArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Bindings.BindingType, TechTalk.SpecFlow.Bindings.StepDefinitionKeyword, System.String, System.String, TechTalk.SpecFlow.Table, TechTalk.SpecFlow.Bindings.StepContext): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String OriginalStepKeyword : Public
+  Properties:
+    TechTalk.SpecFlow.Bindings.StepDefinitionKeyword StepDefinitionKeyword 'get set' : 
+    TechTalk.SpecFlow.Bindings.BindingType Type 'get set' : 
+    System.String Text 'get set' : 
+    System.String MultilineTextArgument 'get set' : 
+    TechTalk.SpecFlow.Table TableArgument 'get set' : 
+    TechTalk.SpecFlow.Bindings.StepContext StepContext 'get set' : 
+  Methods:
+    get_StepDefinitionKeyword(): PrivateScope, Public, HideBySig, SpecialName
+    get_Type(): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    get_MultilineTextArgument(): PrivateScope, Public, HideBySig, SpecialName
+    get_TableArgument(): PrivateScope, Public, HideBySig, SpecialName
+    get_StepContext(): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Infrastructure.TestRunContainerBuilder: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    TechTalk.SpecFlow.Infrastructure.DefaultDependencyProvider DefaultDependencyProvider : Assembly, Static
+  Methods:
+    CreateContainer(IRuntimeConfigurationProvider(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.TestRunner: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Infrastructure.ITestExecutionEngine): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.ITestRunner
+  Properties:
+    TechTalk.SpecFlow.FeatureContext FeatureContext 'get ' : 
+    TechTalk.SpecFlow.ScenarioContext ScenarioContext 'get ' : 
+  Methods:
+    get_FeatureContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ScenarioContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    InitializeTestRunner(Assembly[]): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnFeatureStart(FeatureInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnFeatureEnd(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnScenarioStart(ScenarioInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CollectScenarioErrors(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnScenarioEnd(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnTestRunEnd(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Given(String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    When(String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Then(String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    And(String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    But(String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Pending(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.ITestRunnerManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    CreateTestRunner(Assembly, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetTestRunner(Assembly, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.TestRunnerManager: AutoLayout, AnsiClass, Class, Public
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.ITestRunnerManager
+    System.IDisposable
+  Properties:
+    TechTalk.SpecFlow.ITestRunnerManager Instance 'get set' : 
+  Methods:
+    get_Instance(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Instance(ITestRunnerManager): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    CreateTestRunner(Assembly, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetTestRunner(Assembly, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetTestRunner(): PrivateScope, Public, Static, HideBySig
+    GetAsyncTestRunner(): PrivateScope, Public, Static, HideBySig
+    Reset(): PrivateScope, Assembly, Static, HideBySig
+Struct TechTalk.SpecFlow.Infrastructure.TestStatus: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    TechTalk.SpecFlow.Infrastructure.TestStatus OK = 0 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Infrastructure.TestStatus StepDefinitionPending = 1 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Infrastructure.TestStatus MissingStepDefinition = 2 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Infrastructure.TestStatus BindingError = 3 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.Infrastructure.TestStatus TestError = 4 : Public, Static, Literal, HasDefault
+Class TechTalk.SpecFlow.Tracing.CodeFormattingExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Indent(String, String): PrivateScope, Public, Static, HideBySig
+    ToIdentifier(String): PrivateScope, Public, Static, HideBySig
+    ToIdentifierCamelCase(String): PrivateScope, Public, Static, HideBySig
+    ToIdentifierPart(String): PrivateScope, Public, Static, HideBySig
+    TrimEllipse(String, Int32): PrivateScope, Public, Static, HideBySig
+Interface TechTalk.SpecFlow.Tracing.ITraceListener: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    WriteTestOutput(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WriteToolOutput(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Tracing.DefaultListener: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Tracing.ITraceListener
+  Methods:
+    WriteTestOutput(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    WriteToolOutput(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.ErrorHandling.IErrorProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetMethodText(MethodInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetCallError(MethodInfo, Exception): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetParameterCountError(BindingMatch, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetAmbiguousMatchError(IEnumerable`1, StepArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetAmbiguousBecauseParamCheckMatchError(List`1, StepArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetNoMatchBecauseOfScopeFilterError(List`1, StepArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetMissingStepDefinitionError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPendingStepDefinitionError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ThrowPendingError(TestStatus, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetTooManyBindingParamError(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetNonStaticEventError(MethodInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.ErrorHandling.ErrorProvider: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Tracing.IStepFormatter, TechTalk.SpecFlow.Configuration.RuntimeConfiguration, TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.ErrorHandling.IErrorProvider
+  Methods:
+    GetMethodText(MethodInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetCallError(MethodInfo, Exception): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetParameterCountError(BindingMatch, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetAmbiguousMatchError(IEnumerable`1, StepArgs): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetAmbiguousBecauseParamCheckMatchError(List`1, StepArgs): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetNoMatchBecauseOfScopeFilterError(List`1, StepArgs): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetMissingStepDefinitionError(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPendingStepDefinitionError(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ThrowPendingError(TestStatus, String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetTooManyBindingParamError(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetNonStaticEventError(MethodInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.Tracing.IStepDefinitionSkeletonProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetStepDefinitionSkeleton(StepArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetBindingClassSkeleton(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Tracing.LanguageHelper: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetDefaultKeyword(CultureInfo, BindingType): PrivateScope, Public, Static, HideBySig
+    GetDefaultKeyword(CultureInfo, StepDefinitionKeyword): PrivateScope, Public, Static, HideBySig
+    GetSpecificCultureInfo(CultureInfo): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.Tracing.NullListener: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Tracing.ITraceListener
+  Methods:
+    WriteTestOutput(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    WriteToolOutput(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Tracing.StepDefinitionSkeletonProviderBase: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  Interfaces:
+    TechTalk.SpecFlow.Tracing.IStepDefinitionSkeletonProvider
+  Fields:
+    System.String CODEINDENT =      : Public, Static, Literal, HasDefault
+  Methods:
+    GetStepDefinitionSkeleton(StepArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetBindingClassSkeleton(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Tracing.StepDefinitionSkeletonProviderCS: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :TechTalk.SpecFlow.Tracing.StepDefinitionSkeletonProviderBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetStepDefinitionSkeleton(StepArgs): PrivateScope, Public, Virtual, HideBySig
+    GetBindingClassSkeleton(String): PrivateScope, Public, Virtual, HideBySig
+Class TechTalk.SpecFlow.Tracing.StepDefinitionSkeletonProviderVB: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :TechTalk.SpecFlow.Tracing.StepDefinitionSkeletonProviderBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetStepDefinitionSkeleton(StepArgs): PrivateScope, Public, Virtual, HideBySig
+    GetBindingClassSkeleton(String): PrivateScope, Public, Virtual, HideBySig
+Interface TechTalk.SpecFlow.Tracing.IStepFormatter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetStepDescription(StepArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetMatchText(BindingMatch, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetMatchText(MethodInfo, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetStepText(StepArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Tracing.StepFormatter: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Tracing.IStepFormatter
+  Fields:
+    System.String INDENT =    : Public, Static, Literal, HasDefault
+  Methods:
+    GetStepDescription(StepArgs): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetMatchText(BindingMatch, Object[]): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetMatchText(MethodInfo, Object[]): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetStepText(StepArgs): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Boolean DelayedFixtureTearDown 'get ' : 
+  Methods:
+    TestPending(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TestInconclusive(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TestIgnore(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_DelayedFixtureTearDown(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class TechTalk.SpecFlow.UnitTestProvider.MbUnitRuntimeProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider
+  Properties:
+    Boolean DelayedFixtureTearDown 'get ' : 
+  Methods:
+    TestPending(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TestInconclusive(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TestIgnore(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_DelayedFixtureTearDown(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class TechTalk.SpecFlow.UnitTestProvider.MbUnit3RuntimeProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.UnitTestProvider.MbUnitRuntimeProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider
+  Properties:
+    System.String AssemblyName 'get ' : 
+    Boolean DelayedFixtureTearDown 'get ' : 
+  Methods:
+    get_AssemblyName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    TestPending(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TestInconclusive(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TestIgnore(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_DelayedFixtureTearDown(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class TechTalk.SpecFlow.UnitTestProvider.MsTest2010RuntimeProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TechTalk.SpecFlow.UnitTestProvider.UnitTestRuntimeProviderHelper: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetAssertMethodWithFormattedMessage(String, String, String): PrivateScope, Public, Static, HideBySig
+Class TechTalk.SpecFlow.UnitTestProvider.XUnitRuntimeProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider
+  Properties:
+    Boolean DelayedFixtureTearDown 'get ' : 
+  Methods:
+    TestPending(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TestInconclusive(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TestIgnore(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_DelayedFixtureTearDown(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class TechTalk.SpecFlow.UnitTestProvider.NUnitRuntimeProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider
+  Properties:
+    Boolean DelayedFixtureTearDown 'get ' : 
+  Methods:
+    TestPending(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TestInconclusive(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TestIgnore(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_DelayedFixtureTearDown(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class TechTalk.SpecFlow.ScenarioContext: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.SpecFlowContext
+    Void .ctor(TechTalk.SpecFlow.ScenarioInfo, TechTalk.SpecFlow.ITestRunner, BoDi.IObjectContainer): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TechTalk.SpecFlow.ScenarioContext Current 'get set' : 
+    TechTalk.SpecFlow.ScenarioInfo ScenarioInfo 'get set' : 
+    TechTalk.SpecFlow.ScenarioBlock CurrentScenarioBlock 'get set' : 
+    System.Exception TestError 'get set' : 
+    TechTalk.SpecFlow.Infrastructure.TestStatus TestStatus 'get set' : 
+    System.Collections.Generic.List`1[System.String] PendingSteps 'get set' : 
+    System.Collections.Generic.List`1[System.String] MissingSteps 'get set' : 
+    System.Diagnostics.Stopwatch Stopwatch 'get set' : 
+    TechTalk.SpecFlow.ITestRunner TestRunner 'get set' : 
+  Methods:
+    get_Current(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Current(ScenarioContext): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ScenarioInfo(): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentScenarioBlock(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentScenarioBlock(ScenarioBlock): PrivateScope, Assembly, HideBySig, SpecialName
+    get_TestError(): PrivateScope, Public, HideBySig, SpecialName
+    set_TestError(Exception): PrivateScope, Assembly, HideBySig, SpecialName
+    get_TestStatus(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_TestStatus(TestStatus): PrivateScope, Assembly, HideBySig, SpecialName
+    get_PendingSteps(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_MissingSteps(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Stopwatch(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_TestRunner(): PrivateScope, Assembly, HideBySig, SpecialName
+    Pending(): PrivateScope, Public, HideBySig
+    GetBindingInstance(Type): PrivateScope, Public, HideBySig
+    SetBindingInstance(Type, Object): PrivateScope, Assembly, HideBySig
+Struct TechTalk.SpecFlow.ScenarioBlock: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    TechTalk.SpecFlow.ScenarioBlock None = 0 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.ScenarioBlock Given = 1 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.ScenarioBlock When = 2 : Public, Static, Literal, HasDefault
+    TechTalk.SpecFlow.ScenarioBlock Then = 3 : Public, Static, Literal, HasDefault
+Class TechTalk.SpecFlow.ScenarioInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String[] Tags 'get set' : 
+    System.String Title 'get set' : 
+  Methods:
+    get_Tags(): PrivateScope, Public, HideBySig, SpecialName
+    get_Title(): PrivateScope, Public, HideBySig, SpecialName
+Class TechTalk.SpecFlow.Bindings.StepDefinitionBinding: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :TechTalk.SpecFlow.Bindings.MethodBinding
+    Void .ctor(TechTalk.SpecFlow.Configuration.RuntimeConfiguration, TechTalk.SpecFlow.ErrorHandling.IErrorProvider, TechTalk.SpecFlow.Bindings.BindingType, System.String, System.Reflection.MethodInfo, TechTalk.SpecFlow.Bindings.BindingScope): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Bindings.IStepDefinitionBinding
+    TechTalk.SpecFlow.Bindings.IScopedBinding
+  Properties:
+    TechTalk.SpecFlow.Bindings.BindingType Type 'get set' : 
+    System.Text.RegularExpressions.Regex Regex 'get set' : 
+    TechTalk.SpecFlow.Bindings.BindingScope BindingScope 'get set' : 
+    Boolean IsScoped 'get ' : 
+  Methods:
+    get_Type(): PrivateScope, Public, HideBySig, SpecialName
+    get_Regex(): PrivateScope, Public, HideBySig, SpecialName
+    get_BindingScope(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsScoped(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Invoke(IContextManager, ITestTracer, Object[], TimeSpan&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Table: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String ERROR_NO_CELLS_TO_ADD = No cells to add : Assembly, Static, Literal, HasDefault
+    System.String ERROR_NO_HEADER_TO_ADD = No headers to add : Assembly, Static, Literal, HasDefault
+    System.String ERROR_COLUMN_NAME_NOT_FOUND = Could not find a column named '{0}' in the table. : Assembly, Static, Literal, HasDefault
+    System.String ERROR_CELLS_NOT_MATCHING_HEADERS = The number of cells ({0}) you are trying to add doesn't match the number of columns ({1}) : Assembly, Static, Literal, HasDefault
+  Properties:
+    System.Collections.Generic.ICollection`1[System.String] Header 'get ' : 
+    TechTalk.SpecFlow.TableRows Rows 'get ' : 
+    Int32 RowCount 'get ' : 
+  Methods:
+    get_Header(): PrivateScope, Public, HideBySig, SpecialName
+    get_Rows(): PrivateScope, Public, HideBySig, SpecialName
+    get_RowCount(): PrivateScope, Public, HideBySig, SpecialName
+    ContainsColumn(String): PrivateScope, Public, HideBySig
+    GetHeaderIndex(String, Boolean(Optional, HasDefault)): PrivateScope, Assembly, HideBySig
+    AddRow(IDictionary`2): PrivateScope, Public, HideBySig
+    AddRow(String[]): PrivateScope, Public, HideBySig
+    RenameColumn(String, String): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class TechTalk.SpecFlow.TableRows: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[TechTalk.SpecFlow.TableRow]
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    TechTalk.SpecFlow.TableRow Item [Int32] 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(TableRow): PrivateScope, Assembly, HideBySig
+Class TechTalk.SpecFlow.TableRow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Table, System.String[]): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IDictionary`2[System.String,System.String]
+    System.Collections.Generic.ICollection`1[System.Collections.Generic.KeyValuePair`2[System.String,System.String]]
+    System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.String]]
+    System.Collections.IEnumerable
+  Properties:
+    System.String Item [System.String] 'get set' : 
+    System.String Item [Int32] 'get ' : 
+    Int32 Count 'get ' : 
+    System.Collections.Generic.ICollection`1[System.String] Keys 'get ' : 
+    System.Collections.Generic.ICollection`1[System.String] Values 'get ' : 
+  Methods:
+    get_Item(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(String, String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ContainsKey(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryGetValue(String, String&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Keys(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Values(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class TechTalk.SpecFlow.Infrastructure.TestExecutionEngine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Tracing.IStepFormatter, TechTalk.SpecFlow.Tracing.ITestTracer, TechTalk.SpecFlow.ErrorHandling.IErrorProvider, TechTalk.SpecFlow.Bindings.IStepArgumentTypeConverter, TechTalk.SpecFlow.Configuration.RuntimeConfiguration, TechTalk.SpecFlow.Bindings.IBindingRegistry, TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider, System.Collections.Generic.IDictionary`2[TechTalk.SpecFlow.ProgrammingLanguage,TechTalk.SpecFlow.Tracing.IStepDefinitionSkeletonProvider], TechTalk.SpecFlow.Infrastructure.IContextManager, TechTalk.SpecFlow.Infrastructure.IStepDefinitionMatcher, System.Collections.Generic.IDictionary`2[System.String,TechTalk.SpecFlow.Infrastructure.IStepErrorHandler]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Infrastructure.ITestExecutionEngine
+  Properties:
+    TechTalk.SpecFlow.FeatureContext FeatureContext 'get ' : 
+    TechTalk.SpecFlow.ScenarioContext ScenarioContext 'get ' : 
+  Methods:
+    get_FeatureContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ScenarioContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Initialize(Assembly[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnTestRunEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnFeatureStart(FeatureInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnFeatureEnd(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnScenarioStart(ScenarioInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnAfterLastStep(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnScenarioEnd(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Step(StepDefinitionKeyword, String, String, Table): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Pending(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TechTalk.SpecFlow.Tracing.ITestTracer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    TraceStep(StepArgs, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TraceWarning(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TraceStepDone(BindingMatch, Object[], TimeSpan): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TraceStepSkipped(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TraceStepPending(BindingMatch, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TraceBindingError(BindingException): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TraceError(Exception): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TraceNoMatchingStepDefinition(StepArgs, ProgrammingLanguage, List`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TraceDuration(TimeSpan, MethodInfo, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TraceDuration(TimeSpan, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TechTalk.SpecFlow.Tracing.TestTracer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(TechTalk.SpecFlow.Tracing.ITraceListener, TechTalk.SpecFlow.Tracing.IStepFormatter, System.Collections.Generic.IDictionary`2[TechTalk.SpecFlow.ProgrammingLanguage,TechTalk.SpecFlow.Tracing.IStepDefinitionSkeletonProvider]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TechTalk.SpecFlow.Tracing.ITestTracer
+  Methods:
+    TraceStep(StepArgs, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TraceWarning(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TraceStepDone(BindingMatch, Object[], TimeSpan): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TraceStepSkipped(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TraceStepPending(BindingMatch, Object[]): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TraceBindingError(BindingException): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TraceError(Exception): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TraceNoMatchingStepDefinition(StepArgs, ProgrammingLanguage, List`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TraceDuration(TimeSpan, MethodInfo, Object[]): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TraceDuration(TimeSpan, String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TechTalk.SpecFlow.Tracing.TraceListenerHelper: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    WriteTestOutput(ITraceListener, String, Object[]): PrivateScope, Public, Static, HideBySig
+    WriteToolOutput(ITraceListener, String, Object[]): PrivateScope, Public, Static, HideBySig
+Class <>f__AnonymousType0`2[<property>j__TPar,<row>j__TPar]: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Type parameter: <property>j__TPar
+  Type parameter: <row>j__TPar
+    Void .ctor(<property>j__TPar, <row>j__TPar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    <property>j__TPar property 'get ' : 
+    <row>j__TPar row 'get ' : 
+  Methods:
+    get_property(): PrivateScope, Public, HideBySig, SpecialName
+    get_row(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class <>f__AnonymousType1`2[<property>j__TPar,<key>j__TPar]: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Type parameter: <property>j__TPar
+  Type parameter: <key>j__TPar
+    Void .ctor(<property>j__TPar, <key>j__TPar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    <property>j__TPar property 'get ' : 
+    <key>j__TPar key 'get ' : 
+  Methods:
+    get_property(): PrivateScope, Public, HideBySig, SpecialName
+    get_key(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class <>f__AnonymousType2`2[<<>h__TransparentIdentifier11>j__TPar,<row>j__TPar]: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Type parameter: <<>h__TransparentIdentifier11>j__TPar
+  Type parameter: <row>j__TPar
+    Void .ctor(<<>h__TransparentIdentifier11>j__TPar, <row>j__TPar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    <<>h__TransparentIdentifier11>j__TPar <>h__TransparentIdentifier11 'get ' : 
+    <row>j__TPar row 'get ' : 
+  Methods:
+    get_<>h__TransparentIdentifier11(): PrivateScope, Public, HideBySig, SpecialName
+    get_row(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig

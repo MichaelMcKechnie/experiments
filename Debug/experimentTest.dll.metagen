@@ -1,0 +1,21 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly experimentTest, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly FluentAssertions, Version=1.7.1.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a: 
+	hash=None, flags=None
+Assembly nunit.framework, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly TechTalk.SpecFlow, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0778194805d6db41: 
+	hash=None, flags=None
+Class StringSorterTest: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    sortShortListTest(): PrivateScope, Public, HideBySig

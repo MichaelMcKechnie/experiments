@@ -1,0 +1,11 @@
+C:\Users\Michael.Mckechnie\documents\visual studio 2010\Projects\experiments\Acceptance\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Michael.Mckechnie\documents\visual studio 2010\Projects\experiments\Acceptance\bin\Debug\Acceptance.dll
+C:\Users\Michael.Mckechnie\documents\visual studio 2010\Projects\experiments\Acceptance\bin\Debug\Acceptance.pdb
+C:\Users\Michael.Mckechnie\documents\visual studio 2010\Projects\experiments\Acceptance\bin\Debug\nunit.framework.dll
+C:\Users\Michael.Mckechnie\documents\visual studio 2010\Projects\experiments\Acceptance\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Michael.Mckechnie\documents\visual studio 2010\Projects\experiments\Acceptance\obj\Debug\Acceptance.dll
+C:\Users\Michael.Mckechnie\documents\visual studio 2010\Projects\experiments\Acceptance\obj\Debug\Acceptance.pdb
+C:\Data\src\experiments\Acceptance\bin\Debug\Acceptance.dll
+C:\Data\src\experiments\Acceptance\bin\Debug\Acceptance.pdb
+C:\Data\src\experiments\Acceptance\obj\Debug\Acceptance.dll
+C:\Data\src\experiments\Acceptance\obj\Debug\Acceptance.pdb

@@ -1,0 +1,20 @@
+﻿Build started 10/20/2014 5:53:23 PM.
+     1>Project "C:\Data\src\experiments\experimentLib\experimentLib.vcxproj" on node 4 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _EXPORTING /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\experimentLib.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Stdafx.cpp
+         Stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _EXPORTING /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\experimentLib.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stringSorter.cpp
+         stringSorter.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Data\src\experiments\Debug\experimentLib.dll" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Data\src\experiments\Debug\experimentLib.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Data\src\experiments\Debug\experimentLib.lib" /MACHINE:X86 /DLL Debug\app.res
+         Debug\Stdafx.obj
+         Debug\stringSorter.obj
+            Creating library C:\Data\src\experiments\Debug\experimentLib.lib and object C:\Data\src\experiments\Debug\experimentLib.exp
+         experimentLib.vcxproj -> C:\Data\src\experiments\Debug\experimentLib.dll
+     1>Done Building Project "C:\Data\src\experiments\experimentLib\experimentLib.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.25

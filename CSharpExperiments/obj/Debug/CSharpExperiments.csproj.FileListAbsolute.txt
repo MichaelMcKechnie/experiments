@@ -1,0 +1,7 @@
+C:\Data\src\experiments\CSharpExperiments\bin\Debug\CSharpExperiments.dll
+C:\Data\src\experiments\CSharpExperiments\bin\Debug\CSharpExperiments.pdb
+C:\Data\src\experiments\CSharpExperiments\bin\Debug\FluentAssertions.dll
+C:\Data\src\experiments\CSharpExperiments\bin\Debug\nunit.framework.dll
+C:\Data\src\experiments\CSharpExperiments\obj\Debug\CSharpExperiments.csprojResolveAssemblyReference.cache
+C:\Data\src\experiments\CSharpExperiments\obj\Debug\CSharpExperiments.dll
+C:\Data\src\experiments\CSharpExperiments\obj\Debug\CSharpExperiments.pdb
